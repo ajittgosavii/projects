@@ -35,11 +35,14 @@ def render_table(rows: list[dict]) -> None:
             title += f'<div class="variants">Variants: {links}</div>'
         body.append(
             f'<tr><td class="sno">{r["sno"]}</td><td class="title">{title}</td>'
-            f'<td>{html.escape(r["description"])}</td></tr>'
+            f'<td>{html.escape(r["description"])}</td>'
+            f'<td class="category">{html.escape(r["category"])}</td>'
+            f'<td class="hexagon">{html.escape(r["hexagon"])}</td></tr>'
         )
     st.markdown(
         '<div class="wrap"><table class="portfolio"><thead><tr><th>S.No</th><th>Application Title</th>'
-        f'<th>Description</th></tr></thead><tbody>{"".join(body)}</tbody></table></div>',
+        '<th>Description</th><th>Category</th><th>Infosys Hexagon</th></tr></thead>'
+        f'<tbody>{"".join(body)}</tbody></table></div>',
         unsafe_allow_html=True,
     )
 
@@ -55,7 +58,9 @@ st.markdown(
         border-bottom: 1px solid rgba(128,128,128,0.2); line-height: 1.45; }
       table.portfolio td.sno { width: 4rem; text-align: right; font-variant-numeric: tabular-nums;
         color: rgba(128,128,128,0.95); }
-      table.portfolio td.title { width: 26%; font-weight: 600; }
+      table.portfolio td.title { width: 22%; font-weight: 600; }
+      table.portfolio td.category { width: 10rem; }
+      table.portfolio td.hexagon { width: 11rem; }
       table.portfolio a { text-decoration: none; }
       .variants { margin-top: 0.25rem; font-weight: 400; font-size: 0.78rem; line-height: 1.5;
         color: rgba(128,128,128,0.95); }

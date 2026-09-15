@@ -1,6 +1,6 @@
 # Application Portfolio
 
-A Streamlit page listing every application in [github.com/ajittgosavii](https://github.com/ajittgosavii), local builds in `C:\aidemos`, and apps hosted on AWS. Each entry has a serial number, a title, and a two-line description. Apps with several builds are listed once, with the other repositories shown as variants.
+A Streamlit page listing every application in [github.com/ajittgosavii](https://github.com/ajittgosavii), local builds in `C:\aidemos`, and apps hosted on AWS. Each entry has a serial number, a title, a two-line description, a Category (use case or industry) and its Infosys Hexagon pillar (AI Strategy & Engineering, Data for AI, Process AI, Agentic Legacy Modernization, Physical AI, AI Trust). Apps with several builds are listed once, with the other repositories shown as variants.
 
 ## Run locally
 
