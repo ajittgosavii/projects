@@ -19,6 +19,15 @@ LAB_NAME = "ECHO AI Lab – Calgary"
 COLLAB = "In Collaboration with CIS CLD"
 MAX_ATTEMPTS, LOCKOUT_SECONDS = 5, 60
 ITERATIONS = 240_000
+# the Hexagon pillars as they read on the dark brand panel
+PILLARS_ON_DARK = {
+    "AI Strategy & Engineering": "#8DB8FF",
+    "Data for AI": "#63D3DC",
+    "Process AI": "#BBA3FF",
+    "Agentic Legacy Modernization": "#F2B866",
+    "Physical AI": "#FF93A5",
+    "AI Trust": "#86D98F",
+}
 
 
 def hash_password(password: str, salt_hex: str | None = None, iterations: int = ITERATIONS) -> str:
@@ -66,35 +75,52 @@ def logo_svg(size: int, uid: str) -> str:
 
 _LOGIN_CSS = """
 <style>
-  .block-container { max-width: 1280px; padding-top: 1.75rem; }
-  .brand { position: relative; overflow: hidden; min-height: 620px; border-radius: 12px; color: #fff;
-           padding: 3.25rem 3.25rem 8rem; display: flex; flex-direction: column; justify-content: center;
+  [data-testid="stHeader"] { display: none; }
+  .block-container { max-width: none; padding: 0 !important; }
+  .st-key-login_shell [data-testid="stHorizontalBlock"] { gap: 0; align-items: stretch !important; }
+  .st-key-login_shell [data-testid="stColumn"]:nth-child(2) {
+    align-self: stretch; min-height: 100vh; box-sizing: border-box; display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    background: #fff; border-left: 1px solid var(--rule); padding: 3rem 2.5rem; }
+  .st-key-login_shell [data-testid="stColumn"]:nth-child(2) > div {
+    width: 100%; max-width: 23rem; flex: 0 0 auto !important; height: auto !important; }
+
+  .brand { position: relative; overflow: hidden; min-height: 100vh; box-sizing: border-box; color: #fff;
+           display: flex; flex-direction: column; justify-content: space-between; padding: 2.5rem 3.5rem 0;
            font-family: var(--body);
-           background: radial-gradient(120% 90% at 22% 30%, #1A3A78 0%, #0F2248 52%, #0A1733 100%); }
-  .brand .mark { position: relative; width: 92px; height: 92px; }
-  .brand .mark svg { position: relative; z-index: 1; }
-  .rings span { position: absolute; left: 50%; top: 50%; width: 220px; height: 220px; margin: -110px 0 0 -110px;
-                border: 1.5px solid rgba(127, 214, 245, 0.55); border-radius: 50%; opacity: 0;
-                animation: echo 6s cubic-bezier(0.2, 0.6, 0.3, 1) infinite; }
-  .rings span:nth-child(2) { animation-delay: 2s; }
-  .rings span:nth-child(3) { animation-delay: 4s; }
-  @keyframes echo { 0% { transform: scale(0.35); opacity: 0.75; } 100% { transform: scale(2.9); opacity: 0; } }
-  .brand .lab { font-family: var(--cond); font-weight: 600; font-size: 3.1rem; line-height: 1.05;
-                letter-spacing: -0.01em; margin-top: 1.75rem; }
-  .brand .pitch { color: #B8C4DA; font-size: 1.02rem; line-height: 1.6; max-width: 30rem; margin: 1rem 0 1.75rem; }
-  .brand .collab { align-self: flex-start; font-size: 0.875rem; color: #A9B8D2; padding-top: 0.9rem;
-                   border-top: 1px solid rgba(255, 255, 255, 0.16); }
-  .brand .ridge { position: absolute; left: 0; bottom: 0; width: 100%; height: 140px; }
-  .signin { font-family: var(--body); max-width: 25rem; }
-  .signin .title { font-family: var(--cond); font-weight: 600; font-size: 1.85rem; color: var(--ink); }
-  .signin p { color: var(--slate); line-height: 1.55; margin: 0.35rem 0 1.25rem; }
-  .signin-foot { font-family: var(--body); color: var(--muted); font-size: 0.8rem; margin-top: 0.9rem; max-width: 25rem; }
-  [data-testid="stForm"] { background: #fff; border: 1px solid var(--rule); border-radius: 10px;
-                           padding: 1.4rem 1.4rem 0.8rem; max-width: 25rem; }
-  @media (prefers-reduced-motion: reduce) { .rings span { animation: none; } }
+           background: radial-gradient(85% 70% at 88% 48%, #1C4088 0%, #11295A 42%, #0A1733 100%); }
+  .brand > * { position: relative; z-index: 2; }
+  .brand .hero { max-width: 33rem; padding: 3rem 0; }
+  .brand .lab { font-family: var(--cond); font-weight: 600; font-size: clamp(2.3rem, 3.5vw, 3.3rem);
+                line-height: 1.04; letter-spacing: -0.015em; }
+  .brand .pitch { color: #BFCAE0; font-size: 1.05rem; line-height: 1.6; margin: 1.1rem 0 2rem; max-width: 30rem; }
+  .brand .pillars { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem 1.5rem;
+                    font-size: 0.86rem; max-width: 30rem; }
+  .brand .foot { color: #A9B8D2; font-size: 0.85rem; padding: 0 0 8.5rem; }
+  .brand .echo { position: absolute; z-index: 1; right: -10rem; top: 50%; width: 36rem; height: 36rem;
+                 transform: translateY(-50%); pointer-events: none; }
+  .brand .echo > svg { width: 100%; height: 100%; opacity: 0.1; }
+  .brand .rings span { position: absolute; left: 50%; top: 50%; width: 18rem; height: 18rem; margin: -9rem 0 0 -9rem;
+                       border: 1.5px solid rgba(127, 214, 245, 0.42); border-radius: 50%; opacity: 0;
+                       animation: echo 7.5s cubic-bezier(0.2, 0.6, 0.3, 1) infinite; }
+  .brand .rings span:nth-child(2) { animation-delay: 2.5s; }
+  .brand .rings span:nth-child(3) { animation-delay: 5s; }
+  @keyframes echo { 0% { transform: scale(0.4); opacity: 0.8; } 100% { transform: scale(2.5); opacity: 0; } }
+  .brand .ridge { position: absolute; z-index: 1; left: 0; bottom: 0; width: 100%; height: 150px; }
+
+  .signin .title { font-family: var(--cond); font-weight: 600; font-size: 1.9rem; color: var(--ink); }
+  .signin p { font-family: var(--body); color: var(--slate); line-height: 1.55; margin: 0.35rem 0 1.4rem; }
+  .signin-foot { font-family: var(--body); color: var(--muted); font-size: 0.8rem; line-height: 1.5; margin-top: 1rem; }
+  .st-key-login_shell [data-testid="stFormSubmitButton"] button { min-height: 2.8rem; font-weight: 600; }
+
+  @media (prefers-reduced-motion: reduce) { .brand .rings span { animation: none; } }
   @media (max-width: 640px) {
-    .brand { min-height: 0; padding: 2rem 1.5rem 6rem; }
-    .brand .lab { font-size: 2.2rem; }
+    .brand { min-height: 0; padding: 1.75rem 1.5rem 0; }
+    .brand .hero { padding: 2rem 0 1.5rem; }
+    .brand .pillars { grid-template-columns: 1fr; }
+    .brand .foot { padding-bottom: 7rem; }
+    .brand .echo { right: -16rem; opacity: 0.7; }
+    .st-key-login_shell [data-testid="stColumn"]:nth-child(2) { border-left: 0; min-height: 0; padding: 2rem 1.5rem 3rem; }
   }
 </style>
 """
@@ -110,12 +136,19 @@ _RIDGE = (
 
 
 def _brand_panel() -> str:
+    pillars = "".join(
+        f'<span class="pillar" style="--c:{c}"><span class="hx"></span>{name}</span>'
+        for name, c in PILLARS_ON_DARK.items()
+    )
     return (
-        f'<div class="brand"><div class="mark"><div class="rings"><span></span><span></span><span></span></div>'
-        f'{logo_svg(92, "login")}</div><div class="lab">{LAB_NAME}</div>'
+        f'<div class="brand"><div class="mark">{logo_svg(44, "login")}</div>'
+        f'<div class="hero"><div class="lab">{LAB_NAME}</div>'
         '<p class="pitch">The catalogue of AI applications built by the lab across cloud, data, migration and '
-        'security, each with its Infosys Hexagon pillar and business case.</p>'
-        f'<div class="collab">{COLLAB}</div>{_RIDGE}</div>'
+        'security, each mapped to its Infosys Hexagon pillar and business case.</p>'
+        f'<div class="pillars">{pillars}</div></div>'
+        f'<div class="foot">{COLLAB}</div>'
+        f'<div class="echo" aria-hidden="true"><div class="rings"><span></span><span></span><span></span></div>'
+        f'{logo_svg(576, "echo")}</div>{_RIDGE}</div>'
     )
 
 
@@ -143,23 +176,28 @@ def require_login() -> bool:
         return True
     st.markdown(_LOGIN_CSS, unsafe_allow_html=True)
     users = _users()
-    brand, form = st.columns([1.15, 1], gap="large", vertical_alignment="center")
-    brand.markdown(_brand_panel(), unsafe_allow_html=True)
-    with form:
-        st.markdown('<div class="signin"><div class="title">Sign in</div>'
-                    "<p>Use the username and password from your lab administrator.</p></div>",
-                    unsafe_allow_html=True)
-        if not users:
-            st.warning("Sign-in isn't set up yet. Add an [auth.users] section to this app's secrets.")
-        with st.form("login", border=False):
-            username = st.text_input("Username", autocomplete="username")
-            password = st.text_input("Password", type="password", autocomplete="current-password")
-            submitted = st.form_submit_button("Sign in", type="primary", width="stretch", disabled=not users)
-        if submitted:
-            _attempt(users, username.strip(), password)
-        st.markdown('<div class="signin-foot">Access is limited to ECHO AI Lab members.</div>',
-                    unsafe_allow_html=True)
+    with st.container(key="login_shell"):
+        brand, form = st.columns([1.45, 1])  # stretch, so the white sign-in panel runs full height
+        brand.markdown(_brand_panel(), unsafe_allow_html=True)
+        with form:
+            st.markdown('<div class="signin"><div class="title">Sign in</div>'
+                        "<p>Use the username and password from your lab administrator.</p></div>",
+                        unsafe_allow_html=True)
+            if not users:
+                st.warning("Sign-in isn't set up yet. Add an [auth.users] section to this app's secrets.")
+            with st.form("login", border=False):
+                username = st.text_input("Username", autocomplete="username")
+                password = st.text_input("Password", type="password", autocomplete="current-password")
+                submitted = st.form_submit_button("Sign in", type="primary", width="stretch", disabled=not users)
+            if submitted:
+                _attempt(users, username.strip(), password)
+            st.markdown('<div class="signin-foot">Access is limited to ECHO AI Lab members.</div>',
+                        unsafe_allow_html=True)
     return False
+
+
+def current_user() -> str:
+    return st.session_state.get("auth_user", "")
 
 
 def sign_out() -> None:
