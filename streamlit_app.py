@@ -142,7 +142,7 @@ st.markdown(
       .pagehead { font-family: var(--body); color: var(--ink); margin-bottom: 1.2rem; }
       .pagehead .name { font-family: var(--cond); font-weight: 600; font-size: 2.1rem; line-height: 1.1;
                         letter-spacing: -0.01em; }
-      .pagehead .lede { color: var(--slate); font-size: 0.98rem; line-height: 1.55; margin: 0.4rem 0 0; max-width: 46rem; }
+      .pagehead .lede { color: var(--slate); font-size: 0.98rem; line-height: 1.55; margin: 0.4rem 0 0; }
 
       /* portfolio mix: one part-to-whole bar, 2px surface gaps, 4px rounded outer ends */
       .mix { font-family: var(--body); background: #fff; border: 1px solid var(--rule); border-radius: 6px;
