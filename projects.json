@@ -1,0 +1,919 @@
+[
+  {
+    "sno": 1,
+    "title": "CloudIDP Enhanced — Core",
+    "description": "A 15-module enterprise platform for managing multi-account AWS environments, spanning account provisioning, networking, EKS, FinOps, and compliance. Built with Streamlit and boto3, with a Claude-powered AI assistant and CI/CD orchestration and policy-guardrail modules.",
+    "source": "github",
+    "repo": "advwaf"
+  },
+  {
+    "sno": 2,
+    "title": "Advanced Multi-Agent Security System",
+    "description": "An agentic AWS vulnerability-scanning demo built around planning, reflection, and analysis agent roles that iteratively investigate security findings. Streamlit front end with boto3 for AWS discovery and Claude for the agent reasoning loop.",
+    "source": "github",
+    "repo": "agenticaivul"
+  },
+  {
+    "sno": 3,
+    "title": "AI Code Reviewer",
+    "description": "A Streamlit tool that submits pasted code to Claude via structured tool-calling and returns categorized bugs, security issues, and performance findings with severity badges. A single-file app built directly on the Anthropic SDK's JSON-schema tool output.",
+    "source": "github",
+    "repo": "aidemo-frist"
+  },
+  {
+    "sno": 4,
+    "title": "Gen AI ROI & TCO Calculator",
+    "description": "A calculator for estimating the multi-year total cost of ownership and ROI of a generative-AI initiative, broken down by API, infrastructure, development, and operations spend. Streamlit app with PDF report export, industry benchmarks, and scenario comparison.",
+    "source": "github",
+    "repo": "aiestimator"
+  },
+  {
+    "sno": 5,
+    "title": "AI/ML Observability Config Portal",
+    "description": "A Firebase-authenticated portal for configuring an AI/ML observability pipeline, with a plugin manager, webhook/HTTP ingestion, JSON parsing, and Slack alerting. Streamlit app with a role-based admin panel for managing users and plugins.",
+    "source": "github",
+    "repo": "aiml-config-portal"
+  },
+  {
+    "sno": 6,
+    "title": "AI/ML Observability Platform",
+    "description": "A Firebase-authenticated dashboard prototype for monitoring AI/ML model and pipeline health with Plotly charts. Streamlit app with a simpler login/admin layer than its companion config-portal build.",
+    "source": "github",
+    "repo": "aimlobs"
+  },
+  {
+    "sno": 7,
+    "title": "AI Database Migration Studio",
+    "description": "A database migration-sizing tool that recommends AWS RDS/Aurora configurations from on-premise metrics and generates Claude-written cost and migration guidance. Streamlit app with Google OAuth login, sample workload datasets, and PDF report export.",
+    "source": "github",
+    "repo": "airdsexcel"
+  },
+  {
+    "sno": 8,
+    "title": "AeroTrack AI",
+    "description": "An airline transaction-lifecycle tracker letting customer-service teams query bookings, payments, and refunds in natural language and investigate failures across the search-to-refund journey. Streamlit app with a Claude-powered chat assistant and role-based access.",
+    "source": "github",
+    "repo": "airlines"
+  },
+  {
+    "sno": 9,
+    "title": "AI Database Migration Studio — Pricing & Backup",
+    "description": "A second build of the RDS/Aurora migration-sizing tool, adding dedicated AWS pricing lookup, backup-planning, and report-generator modules alongside the core sizing engine. Streamlit app with Claude analysis, Google OAuth, and PDF export.",
+    "source": "github",
+    "repo": "aitoolrds"
+  },
+  {
+    "sno": 10,
+    "title": "Tech Guardrails Platform",
+    "description": "An AI-driven cloud operations dashboard for tracking governance guardrails across an AWS estate, styled as a dark-themed ops console. Streamlit app with optional live boto3 integration and simulated metrics when AWS access isn't configured.",
+    "source": "github",
+    "repo": "aitransform"
+  },
+  {
+    "sno": 11,
+    "title": "TrustLayer AI — Regulatory Readiness",
+    "description": "An interactive demo of an enterprise AI-reliability product that detects LLM hallucinations in real time and reports on regulatory readiness such as the EU AI Act and NIST AI RMF. Streamlit app covering 13 scenarios across 8 industries with an ROI calculator.",
+    "source": "github",
+    "repo": "aitrust"
+  },
+  {
+    "sno": 12,
+    "title": "CloudIDP Enhanced — Azure AD SSO",
+    "description": "The same 15-module multi-account AWS management platform as the base build, extended with Azure AD single sign-on for enterprise login. Streamlit, boto3, and Claude, covering provisioning, EKS, FinOps, and security/compliance.",
+    "source": "github",
+    "repo": "aiwaf"
+  },
+  {
+    "sno": 13,
+    "title": "AI Decision War Room",
+    "description": "A structured decision-debate tool where two Claude-powered agents argue for and against a proposed decision over three rounds, then a neutral Claude judge scores the arguments. Streamlit app styled as a dark 'war room' console.",
+    "source": "github",
+    "repo": "aiwar"
+  },
+  {
+    "sno": 14,
+    "title": "Secure Enterprise DB Analyzer",
+    "description": "A SQL Server performance-monitoring and triage tool with read-only database connections, enterprise security controls (MFA, encryption, audit logging), and configurable alert thresholds. Streamlit app supporting pyodbc/pymssql connections and an optional local Ollama LLM for analysis.",
+    "source": "github",
+    "repo": "appdbperform"
+  },
+  {
+    "sno": 15,
+    "title": "AWS WorkSpaces Provisioner",
+    "description": "An AWS CDK (Python) application that automates provisioning of Amazon WorkSpaces via a Lambda-backed workflow. Infrastructure-as-code project rather than an end-user UI, deployed with the CDK CLI.",
+    "source": "github",
+    "repo": "aws-workspaces-portal"
+  },
+  {
+    "sno": 16,
+    "title": "CloudIDP Enhanced — Cross-Account",
+    "description": "Another build of the multi-account AWS platform, focused on cross-account access via IAM AssumeRole (with setup guides) and a dedicated compliance module. Streamlit, boto3, and Claude, sharing the same dashboard/EKS/FinOps/security modules as the rest of the family.",
+    "source": "github",
+    "repo": "awsaiwaf"
+  },
+  {
+    "sno": 17,
+    "title": "CloudIDP Enhanced — Reference Build",
+    "description": "The reference build of the 15-module AWS management platform (dashboard, accounts, networking, EKS, policy guardrails, FinOps, AI assistant) with the most complete setup documentation of the family. Streamlit and boto3 with Claude-powered recommendations and demo/live data modes.",
+    "source": "github",
+    "repo": "awscldidp"
+  },
+  {
+    "sno": 18,
+    "title": "AWS EC2 SQL Server Sizing Calculator",
+    "description": "A sizing tool that converts on-premise SQL Server metrics into EC2 instance recommendations across dev, QA, staging, and production, with cost estimates per environment. Streamlit app that exports the recommendations as a Word document.",
+    "source": "github",
+    "repo": "awscloud"
+  },
+  {
+    "sno": 19,
+    "title": "AI-Enhanced AWS Compliance Platform",
+    "description": "A multi-account compliance and remediation platform integrating Security Hub, Config, GuardDuty, Inspector, SCPs, OPA, and KICS, with AI-generated remediation code via Claude/Bedrock. Streamlit app supporting GitOps-based policy management and account lifecycle automation.",
+    "source": "github",
+    "repo": "awscompliance"
+  },
+  {
+    "sno": 20,
+    "title": "Enterprise AWS Cost Management",
+    "description": "A multi-account AWS cost-analysis dashboard with AI-generated savings insights and spend-anomaly alerts. Streamlit app built on boto3 and Claude, with its own login layer for enterprise users.",
+    "source": "github",
+    "repo": "awscost"
+  },
+  {
+    "sno": 21,
+    "title": "AWS Enterprise Assessment Platform",
+    "description": "A 132-question readiness assessment covering AWS Control Tower migration and serverless ('Golden Architecture') adoption across 22 domains, with risk-weighted scoring. Streamlit app that uses Claude for gap analysis, roadmaps, and executive reporting.",
+    "source": "github",
+    "repo": "awsctserv"
+  },
+  {
+    "sno": 22,
+    "title": "AWS Guardrails Platform",
+    "description": "A Policy-as-Code governance console for AWS Organizations at scale, orchestrating Terraform, KICS scanning, and OPA/Sentinel policy checks through a GitHub-based CI/CD pipeline. Streamlit front end for reviewing and applying SCPs across hundreds of accounts.",
+    "source": "github",
+    "repo": "awsguardrails"
+  },
+  {
+    "sno": 23,
+    "title": "AWS Landing Zone Studio",
+    "description": "An interactive simulator and AI advisor for designing AWS multi-account landing zones, visualizing the org structure, network topology, and guardrails as you configure them. Streamlit app with a Well-Architected scorecard, one-click remediations, and Claude/GPT-4o design reviews.",
+    "source": "github",
+    "repo": "awslz"
+  },
+  {
+    "sno": 24,
+    "title": "AWS RDS Sizing Tool",
+    "description": "A real-time RDS/Aurora sizing calculator that models deployment topologies from Single-AZ through Aurora Global against live boto3 pricing data and OLTP workload patterns. Streamlit app with exportable sizing reports and environment-specific profiles.",
+    "source": "github",
+    "repo": "awsrds"
+  },
+  {
+    "sno": 25,
+    "title": "AWS Credential & Backup Governance",
+    "description": "An agentic-AI prototype for AWS credential remediation and immutable backup governance, flagging over-privileged credentials and mapping backup coverage across an app inventory. Streamlit demo with a mocked AWS intelligence client and a ServiceNow ticketing integration.",
+    "source": "github",
+    "repo": "awssec"
+  },
+  {
+    "sno": 26,
+    "title": "AWS Well-Architected Advisor - Enterprise",
+    "description": "A comprehensive AWS architecture-review platform scoring designs against the Well-Architected Framework's six pillars, with an AI-powered scanner that reviews uploaded diagrams or IaC. Streamlit app adding EKS modernization, FinOps, 8-framework compliance mapping, and DR-pattern guidance.",
+    "source": "github",
+    "repo": "awswaf"
+  },
+  {
+    "sno": 27,
+    "title": "CloudIDP Enhanced — Entra ID + EKS Wizard",
+    "description": "The most feature-complete build in the family, adding Azure Entra ID auth, an AI-driven EKS architecture wizard, GitOps manifest generation, a carbon-footprint calculator, and an automated remediation engine. Streamlit, boto3, and Claude on top of the shared multi-account management core.",
+    "source": "github",
+    "repo": "awswafazure"
+  },
+  {
+    "sno": 28,
+    "title": "CloudIDP Enhanced — Resource Scanner",
+    "description": "A mid-tier build of the platform adding a comprehensive AWS resource scanner, a compliance-framework mapper, and an AI-enhanced remediation engine on top of the core account, EKS, and FinOps modules. Streamlit, boto3, and Claude.",
+    "source": "github",
+    "repo": "awswafhub"
+  },
+  {
+    "sno": 29,
+    "title": "AWS Well-Architected Advisor Enterprise",
+    "description": "An enterprise Streamlit platform for AWS architecture review, EKS modernization planning, FinOps, compliance, and migration/DR assessment. Uses Claude AI across all six Well-Architected pillars with a 30+ tool EKS toolkit and automated PDF reporting.",
+    "source": "github",
+    "repo": "awswafr"
+  },
+  {
+    "sno": 30,
+    "title": "AWS Well-Architected Framework Advisor",
+    "description": "A Streamlit platform for designing and assessing AWS architectures via natural language, Terraform import, live AWS account scanning, or a visual builder. Runs a 200+ question Well-Architected assessment across six pillars with Claude-powered chat and multi-account portfolio tracking.",
+    "source": "github",
+    "repo": "awswafscan"
+  },
+  {
+    "sno": 31,
+    "title": "AWS Well-Architected AI Lens",
+    "description": "A later build of the Well-Architected design-and-assessment platform, adding an AI Lens module and architecture diagram generation on top of NLP, Terraform-import, and AWS-scan workflows. Built with Streamlit and Claude, with PCI-DSS, HIPAA, SOC 2, and ISO 27001 compliance reporting.",
+    "source": "github",
+    "repo": "awswar"
+  },
+  {
+    "sno": 32,
+    "title": "Citrix to AWS EUC Migration Studio",
+    "description": "A 15-tab Streamlit planning tool for migrating Citrix VDI environments (CVAD, DaaS, XenApp/XenDesktop) to AWS End User Computing services. Covers discovery questionnaires, persona-to-service mapping, 3-year TCO modeling, a best-practices assessment, IaC generation, and a Claude/OpenAI advisor.",
+    "source": "github",
+    "repo": "awswkspc"
+  },
+  {
+    "sno": 33,
+    "title": "Azure CloudOps AI Platform",
+    "description": "A Streamlit demo of an Azure cloud-operations platform spanning six architecture layers, from a hub-spoke landing zone to a Gen AI engine. Ships seven AI features spanning NL-to-Bicep generation, an ops chatbot, drift and access-anomaly detection, network posture, FinOps, and risk-scored approvals.",
+    "source": "github",
+    "repo": "azureaiops"
+  },
+  {
+    "sno": 34,
+    "title": "VDI Migration Assessment Tool",
+    "description": "A Streamlit tool that assesses migrating a VMware Horizon VDI estate to AWS End User Computing, despite its repo name it targets AWS rather than Azure. Models per user-type sizing and cost, with Claude-generated migration recommendations.",
+    "source": "github",
+    "repo": "azurevdi"
+  },
+  {
+    "sno": 35,
+    "title": "BOMOCO Cloud Optimizer",
+    "description": "A Streamlit prototype for a \"self-driving cloud\" platform that jointly optimizes cost, carbon emissions, water usage, performance, and business KPIs. Includes a carbon-intensity dashboard, a Pareto-frontier multi-objective optimizer, and Claude-generated trade-off recommendations.",
+    "source": "github",
+    "repo": "bomoco"
+  },
+  {
+    "sno": 36,
+    "title": "CloudIDP Enhanced — Job Queue Edition",
+    "description": "A 15-module Streamlit platform for multi-account AWS governance and automation, spanning resource inventory, EKS, security/compliance, FinOps, and account-lifecycle management. Adds a Claude AI assistant, a background job queue, and a persistence layer over two earlier CloudIDP variants.",
+    "source": "github",
+    "repo": "cldidp"
+  },
+  {
+    "sno": 37,
+    "title": "Cloud Compliance Canvas — React Console",
+    "description": "A React/Vite AWS governance console covering security findings, multi-framework compliance, vulnerability tracking, policy guardrails, and AI-assisted remediation across an AWS Organization. Backed by a Lambda API with a demo/live data toggle and Jira/Slack/ServiceNow/PagerDuty integrations.",
+    "source": "github",
+    "repo": "cloud-compliance-canvas"
+  },
+  {
+    "sno": 38,
+    "title": "CloudIDP",
+    "description": "A Streamlit AWS infrastructure platform covering design, provisioning, and 14 on-demand operations such as rightsizing, patch automation, and drift detection. An AWS-only refactor that centralizes account configuration and adds FinOps and policy-guardrail modules.",
+    "source": "github",
+    "repo": "cloudidp"
+  },
+  {
+    "sno": 39,
+    "title": "CloudIDP Multi-Account Platform",
+    "description": "A Streamlit platform for managing an unlimited number of AWS accounts via cross-account IAM role assumption, with a global resource inventory and consolidated FinOps billing. Aggregates Security Hub, GuardDuty, and Config compliance findings across the fleet with automated account onboarding/offboarding.",
+    "source": "github",
+    "repo": "cloudidps"
+  },
+  {
+    "sno": 40,
+    "title": "Compliance and FinOps Canvas",
+    "description": "A large single-file Streamlit platform for AWS compliance, FinOps, and security orchestration, including an SCP policy engine and EKS/container vulnerability scanning. Generates Windows/Linux remediation scripts and AI threat analysis via a unified remediation dashboard and Claude-based configuration assistant.",
+    "source": "github",
+    "repo": "compliancenfinops"
+  },
+  {
+    "sno": 41,
+    "title": "Container Security Remediation Platform",
+    "description": "A Streamlit app that tracks container vulnerability findings and their remediation jobs in a local SQLite database, recording per-job status, duration, and logs. Provides AI-assisted vulnerability classification and generates remediation scripts.",
+    "source": "github",
+    "repo": "containersvul"
+  },
+  {
+    "sno": 42,
+    "title": "Container Vulnerability Management",
+    "description": "A Streamlit platform for container vulnerability scanning across EKS, ECS, AKS, ACI, GKE, and Cloud Run. Uses agentic Claude tool-use and an MCP server for automated multi-cloud analysis, mapped to CIS and NIST compliance controls.",
+    "source": "github",
+    "repo": "containervul"
+  },
+  {
+    "sno": 43,
+    "title": "AI Contract Lifecycle Management",
+    "description": "A Streamlit contract-management tool with five AI agents covering clause extraction (with OCR), template-based drafting, risk scoring, side-by-side comparison, and a grounded contract Q&A copilot. Built on OpenAI GPT-4o with an obligations/renewals register and portfolio dashboard.",
+    "source": "github",
+    "repo": "contractmgmt"
+  },
+  {
+    "sno": 44,
+    "title": "BuffaloMitra Dairy Management",
+    "description": "A Streamlit app for AI-assisted dairy and buffalo herd management, tracking herd and health records in a local SQLite database. Uses Claude to generate management insights and recommendations for farm operators.",
+    "source": "github",
+    "repo": "dairyfarming"
+  },
+  {
+    "sno": 45,
+    "title": "Database Metrics Collector",
+    "description": "A Streamlit tool that combines AWS RDS cost and performance analysis with real-time on-premise database monitoring for Oracle, MySQL, and SQL Server. Collects live CPU, memory, connection, and query metrics via cx_Oracle/pymysql/pyodbc for cloud-migration comparisons.",
+    "source": "github",
+    "repo": "dbmetrics"
+  },
+  {
+    "sno": 46,
+    "title": "CloudMigrate",
+    "description": "A single-file Streamlit database-migration planning tool, deployable with just one script and a requirements file. Encrypts stored database credentials with AES-256/PBKDF2 and can persist state to Postgres, with optional Claude AI assistance.",
+    "source": "github",
+    "repo": "dbmigrate"
+  },
+  {
+    "sno": 47,
+    "title": "Enterprise Database Migration Analyzer",
+    "description": "A Streamlit platform for planning heterogeneous database migrations, parsing and diffing schemas and queries (via ast/difflib) to flag compatibility issues. Produces cost, security, and compliance analysis cards for the proposed target environment.",
+    "source": "github",
+    "repo": "dbmigration"
+  },
+  {
+    "sno": 48,
+    "title": "AWS Migration Analyzer AI",
+    "description": "A large Streamlit platform for AWS database migration planning, with Claude-driven sizing recommendations, agent-scaling guidance, and live API status monitoring. Includes Firebase-based authentication and PDF report generation via ReportLab.",
+    "source": "github",
+    "repo": "dbmigrations"
+  },
+  {
+    "sno": 49,
+    "title": "AWS Database Migration Analyzer — Lite",
+    "description": "A Streamlit app for planning AWS database migrations, sizing target infrastructure with boto3 and generating Claude-powered right-sizing recommendations. A lighter, non-authenticated build in the same migration-analyzer product line as dbmigrations.",
+    "source": "github",
+    "repo": "dxnetwork"
+  },
+  {
+    "sno": 50,
+    "title": "AWS Migration Analyzer Enterprise",
+    "description": "A larger build of the AWS database migration analyzer, adding Firebase-based user authentication and expanded reporting. Generates Claude-driven sizing and cost recommendations via boto3, alongside PDF and Excel exports for migration readiness.",
+    "source": "github",
+    "repo": "dxnetworkvpc"
+  },
+  {
+    "sno": 51,
+    "title": "AWS EC2 SQL Sizing Calculator",
+    "description": "A Streamlit calculator that right-sizes AWS EC2 instances for SQL Server workloads from on-premise CPU, RAM, storage, and IOPS inputs. Prefers AMD-based instance families for cost savings and exports recommendations to CSV and Word.",
+    "source": "github",
+    "repo": "ec2dba"
+  },
+  {
+    "sno": 52,
+    "title": "AWS EC2 SQL Sizing Calculator — Mirror",
+    "description": "A Streamlit calculator that right-sizes AWS EC2 instances for SQL Server workloads from on-premise CPU, RAM, storage, and IOPS inputs. Identical in code to the ec2dba repo, prefers AMD instances for cost savings and exports to CSV/Word.",
+    "source": "github",
+    "repo": "ec2dbad"
+  },
+  {
+    "sno": 53,
+    "title": "Enterprise EC2 SQL Sizing",
+    "description": "A more polished Streamlit build of the EC2 SQL Server sizing calculator, with input tooltips and enterprise styling. Produces per-environment (dev/QA/staging/production) instance recommendations from on-premise metrics, exported to CSV and Word.",
+    "source": "github",
+    "repo": "ec2dbs"
+  },
+  {
+    "sno": 54,
+    "title": "AWS Cloud Migration Optimizer",
+    "description": "A Streamlit tool for AWS migration sizing that layers VMware vRealize Operations (vROps) metrics onto EC2 and SQL Server right-sizing, using async boto3/aiohttp calls for live pricing. Produces cost and optimization recommendations from combined on-prem and vROps data.",
+    "source": "github",
+    "repo": "ec2sql"
+  },
+  {
+    "sno": 55,
+    "title": "Enhanced AWS Migration Platform",
+    "description": "A comprehensive Streamlit migration-sizing platform that ingests VMware vRealize Operations (vROps) metrics to right-size AWS EC2 and RDS targets, with Claude-driven recommendations. Exports executive PDF reports via ReportLab and Excel workbooks via openpyxl.",
+    "source": "github",
+    "repo": "ec2workload"
+  },
+  {
+    "sno": 56,
+    "title": "AWS EC2 SQL Sizing Calculator — Multi-Environment",
+    "description": "A Streamlit calculator that converts on-prem SQL Server CPU, RAM, storage and IOPS metrics into right-sized AWS EC2 recommendations across dev/QA/staging/production. Favors cost-optimized AMD instance families and exports results to CSV and Word.",
+    "source": "github",
+    "repo": "edbalog"
+  },
+  {
+    "sno": 57,
+    "title": "EKS GitOps Automation",
+    "description": "Infrastructure-as-code repository for provisioning and managing an Amazon EKS cluster through GitOps, driven by an AI KubeOps platform. Holds the Terraform and Kubernetes manifests that the automation applies.",
+    "source": "github",
+    "repo": "eks-gitops-automation"
+  },
+  {
+    "sno": 58,
+    "title": "EKS Operations Platform",
+    "description": "An enterprise Streamlit console for designing and operating EKS clusters, covering architecture patterns (microservices, ML/GPU, PCI-DSS, HIPAA, multi-tenant SaaS) and CI/CD strategies (GitOps, canary, blue/green). Includes role-based access control with per-role approval tiers for cluster changes.",
+    "source": "github",
+    "repo": "eksdesign"
+  },
+  {
+    "sno": 59,
+    "title": "EVS & EST Quiz Engine",
+    "description": "A Streamlit quiz app for practicing Environmental Studies and Environmental Science & Technology topics with 200+ multiple-choice questions. Offers practice and timed test modes, configurable difficulty, a question navigator and score tracking.",
+    "source": "github",
+    "repo": "evsquiz"
+  },
+  {
+    "sno": 60,
+    "title": "Multi-Cloud FinOps on GCP",
+    "description": "A Google Cloud rebuild of a FinOps analytics platform, using BigQuery as the FOCUS-schema cost warehouse and Google ADK agents on Gemini for natural-language cost Q&A. FastAPI serves a React client, while a mechanical extractor keeps the shared analytics engines in sync with the original Streamlit app.",
+    "source": "github",
+    "repo": "finops-gcp"
+  },
+  {
+    "sno": 61,
+    "title": "Cloud Compliance Canvas — FinOps Edition",
+    "description": "An AI-powered Streamlit platform combining AWS governance, FinOps and security orchestration in one console. Covers multi-account lifecycle management, compliance framework mapping (SOC 2, PCI-DSS, HIPAA, GDPR, ISO 27001), Policy-as-Code via OPA, and automated remediation including EKS.",
+    "source": "github",
+    "repo": "finopsncompliance"
+  },
+  {
+    "sno": 62,
+    "title": "Container Vulnerability Demo App",
+    "description": "A deliberately vulnerable sample application (FastAPI backend, React/Nginx frontend, Celery worker) built to demonstrate automated container security remediation. Ships with hardcoded secrets, outdated base images and EOL runtimes for an AI pipeline to detect and fix.",
+    "source": "github",
+    "repo": "futuremindsdockerepo"
+  },
+  {
+    "sno": 63,
+    "title": "Heal Within Reel Scheduler",
+    "description": "A Streamlit content studio for generating and scheduling Instagram Reels for a wellness brand, with Cloudinary media hosting and AI-generated captions. Tracks post status end-to-end and publishes through the Instagram API.",
+    "source": "github",
+    "repo": "heal-within-poster"
+  },
+  {
+    "sno": 64,
+    "title": "HOLDPOINT Permit Safety Reviewer",
+    "description": "A multi-agent AI system that adversarially reviews work permits before authorization, checking scope, hazard coverage, hold points, worker competency and simultaneous-operations conflicts against live unit state. Built on Streamlit and LangGraph with Claude/GPT-4o, it verifies every cited safety control against source procedures in code and only ever outputs advisory, human-authorized decisions.",
+    "source": "github",
+    "repo": "holdpoint"
+  },
+  {
+    "sno": 65,
+    "title": "Enterprise AWS EC2 SQL Sizing",
+    "description": "A polished, region-aware version of the EC2 SQL Server sizing calculator, adding AWS region selection and a styled enterprise UI on top of the same on-prem-to-cloud sizing engine. Outputs sizing recommendations for dev through production with CSV and Word export.",
+    "source": "github",
+    "repo": "icedba"
+  },
+  {
+    "sno": 66,
+    "title": "AWS EC2 SQL Sizing (Enterprise)",
+    "description": "Another iteration of the AWS EC2 SQL Server sizing calculator, adding environment-based AWS credential loading and a refined enterprise Streamlit theme. Uses the same on-prem metrics engine to size compute, memory, storage and IOPS across environments.",
+    "source": "github",
+    "repo": "impec2"
+  },
+  {
+    "sno": 67,
+    "title": "Migration Version Lifecycle Tracker",
+    "description": "A multi-agent Streamlit app that uses Claude to fetch live end-of-life and end-of-support dates for 18 OS families and 20 database products, with no hardcoded baseline. A second agent generates per-row migration recommendations, and a third monitors for bi-weekly refreshes.",
+    "source": "github",
+    "repo": "infy_tracker"
+  },
+  {
+    "sno": 68,
+    "title": "OS & Database Lifecycle Tracker",
+    "description": "A companion build of the multi-agent lifecycle tracker that uses Claude web search to pull live OS and database end-of-support dates rather than a static table. Generates AI migration recommendations per platform and prompts the user for periodic data refreshes.",
+    "source": "github",
+    "repo": "infylifecycle"
+  },
+  {
+    "sno": 69,
+    "title": "Indian Railways Live Tracker",
+    "description": "A multi-user Streamlit app for tracking Indian Railways trains: search by number or name, check seat availability and PNR status, follow live running position and delays, and view full timetables. Includes user registration/login with saved search history and favorites, backed by the IRCTC RapidAPI.",
+    "source": "github",
+    "repo": "irctc"
+  },
+  {
+    "sno": 70,
+    "title": "AI Database Management Suite",
+    "description": "A Streamlit toolkit that uses AI to generate schema documentation, data dictionaries, incident runbooks and change-impact analysis for databases. Also surfaces design-pattern detection, health trend charts and prioritized optimization recommendations.",
+    "source": "github",
+    "repo": "kmdoc"
+  },
+  {
+    "sno": 71,
+    "title": "KrishiMitra Maharashtra",
+    "description": "An AI-powered Streamlit assistant for Maharashtra farmers, built on Claude for agriculture guidance. Combines crop and market data with a conversational advisor styled for regional agricultural use cases.",
+    "source": "github",
+    "repo": "krishimitra"
+  },
+  {
+    "sno": 72,
+    "title": "Regulatory Compliance AI Platform",
+    "description": "An agentic Streamlit platform for regulatory change monitoring, obligation analysis, audit preparation and enforcement analytics, built on one architecture that re-targets to different regulated industries via a swappable \"domain pack\". Uses seven LangGraph agents over GPT-4o with RAG-enhanced retrieval across regulators, obligations and case history.",
+    "source": "github",
+    "repo": "legalncompliance"
+  },
+  {
+    "sno": 73,
+    "title": "Cloud Migration Tool Comparator",
+    "description": "A Streamlit app that ingests exported Excel workbooks from multiple cloud migration assessment tools and compares their sizing, cost and application-count outputs side by side. Highlights the winning tool per metric and visualizes results with Plotly.",
+    "source": "github",
+    "repo": "migratecomp"
+  },
+  {
+    "sno": 74,
+    "title": "Oracle to MongoDB Migration Analyzer",
+    "description": "An enterprise Streamlit tool that analyzes Oracle-to-MongoDB migrations, scoring cost, risk and strategy across services and rendering heat maps, timelines and waterfall charts. Generates executive PDF reports via ReportLab alongside CSV/Excel exports.",
+    "source": "github",
+    "repo": "migratetools"
+  },
+  {
+    "sno": 75,
+    "title": "CloudIDP Multi-Cloud Platform",
+    "description": "An enterprise Streamlit platform unifying AWS and Azure operations (GCP planned) behind one interface, spanning 16 modules — dashboards, account lifecycle, networking, provisioning, security/compliance, containers and FinOps. Lets operators switch cloud providers from a single control panel.",
+    "source": "github",
+    "repo": "multicld"
+  },
+  {
+    "sno": 76,
+    "title": "Multi-Cloud FinOps Command Center",
+    "description": "A Streamlit FinOps platform that normalizes AWS, Azure, GCP and OCI cost data to the FOCUS 1.2 spec, then builds showback/chargeback allocation, spend baselining, a 24-month budget forecast and an optimization backlog on top. An OpenAI + LangGraph agent team answers cost questions against the real underlying data.",
+    "source": "github",
+    "repo": "multicldfinops"
+  },
+  {
+    "sno": 77,
+    "title": "CloudIDP Enhanced Platform",
+    "description": "An AWS-focused enterprise Streamlit console with 15 modules spanning accounts, networking, EKS, security compliance across 7 frameworks, FinOps and automated account lifecycle onboarding. Adds a Claude-powered AI assistant for architecture recommendations, cost analysis and IaC generation.",
+    "source": "github",
+    "repo": "multicloud"
+  },
+  {
+    "sno": 78,
+    "title": "Multi-Cloud Infrastructure Intelligence",
+    "description": "A Streamlit platform for managing AWS, Azure and GCP infrastructure at scale (built for 640+ AWS accounts), with native cloud CI/CD alongside a dedicated Harness IO integration. Covers account management, networking, Kubernetes clusters and FinOps in one dashboard.",
+    "source": "github",
+    "repo": "multiclouds"
+  },
+  {
+    "sno": 79,
+    "title": "Multi-Cloud Security Scanner",
+    "description": "A Streamlit dashboard that scans EC2, EKS, ECS and Lambda across AWS regions for misconfigurations such as open ports, IMDSv1 and missing encryption, cross-checked against Inspector and Security Hub findings. AWS Bedrock (Claude/Titan) generates remediation plans, with one-click automated fixes for common issues.",
+    "source": "github",
+    "repo": "multicloudsecurity"
+  },
+  {
+    "sno": 80,
+    "title": "Multi-DB Schema Documentation Tool",
+    "description": "A Streamlit tool that uses Claude to auto-generate professional schema documentation across multiple database engines. Turns a raw schema into structured, exportable documentation without manual write-up.",
+    "source": "github",
+    "repo": "multidbschemadoc"
+  },
+  {
+    "sno": 81,
+    "title": "GenAI Database Query Translator",
+    "description": "A Streamlit app that uses Claude to translate SQL and query syntax between different database engines. Aimed at teams migrating queries across heterogeneous database platforms.",
+    "source": "github",
+    "repo": "multiquerydb"
+  },
+  {
+    "sno": 82,
+    "title": "Enterprise AWS Migration Strategy Platform",
+    "description": "A Streamlit platform for planning heterogeneous database migrations to AWS, covering network throughput, DataSync/DMS agent sizing, security and performance analysis for a single migration project. Pulls live AWS pricing via boto3 and uses Claude to generate an executive summary and next-step recommendations with exportable reports.",
+    "source": "github",
+    "repo": "netdba"
+  },
+  {
+    "sno": 83,
+    "title": "AWS Network-Path Migration Analyzer",
+    "description": "A deep Streamlit analyzer for AWS database and file migrations that models the full network path — NIC hardware, OS overhead, DataSync/DMS agent scaling and positioning — down to real achievable throughput. Compares FSx destination options and produces AI-driven insights and executive PDF reports.",
+    "source": "github",
+    "repo": "networkdx"
+  },
+  {
+    "sno": 84,
+    "title": "Multi-Service Migration Strategy Platform",
+    "description": "A Streamlit platform for planning multi-service AWS migrations across business units and waves, factoring in data classification, residency and SLA requirements alongside network topology and transfer-service choice (DataSync, DMS, Snowball). Produces an executive summary, implementation roadmap and AI-generated strategic report.",
+    "source": "github",
+    "repo": "networkpatterns"
+  },
+  {
+    "sno": 85,
+    "title": "CISCLD Ascend",
+    "description": "A Streamlit decision-support simulator for moving an on-premises VMware estate to Microsoft Azure. It prices workloads from the live Azure Retail Prices API, models Azure Migrate's real service limits, runs Monte Carlo risk analysis, and scores 15 alternative target platforms.",
+    "source": "github",
+    "repo": "onpremtocloud"
+  },
+  {
+    "sno": 86,
+    "title": "Migration Governance Controls",
+    "description": "A library of pre-approved Terraform modules, CI/CD pipeline templates, and OPA policies for governing cloud migrations across AWS, Azure and GCP. A companion migration accelerator uses it to map workloads to compliant infrastructure, validate policy-as-code, and trigger native CI/CD pipelines.",
+    "source": "github",
+    "repo": "orgcontrols"
+  },
+  {
+    "sno": 87,
+    "title": "Enterprise Productivity Tracker",
+    "description": "A Streamlit app for tracking team productivity, activities and goals across multiple teams. Firebase/Firestore handles auth and storage, with dashboards, status badges and goal-attainment metrics built on Plotly.",
+    "source": "github",
+    "repo": "prodtracker"
+  },
+  {
+    "sno": 88,
+    "title": "AWS RDS Migration & Sizing Tool",
+    "description": "A login-gated Streamlit tool that sizes and prices AWS RDS migrations from on-premises database workloads. It calculates data-transfer time, pulls live AWS pricing, and exports polished PDF/Excel migration reports via ReportLab.",
+    "source": "github",
+    "repo": "rdsai"
+  },
+  {
+    "sno": 89,
+    "title": "Enterprise Migration Platform",
+    "description": "A Streamlit platform for planning enterprise cloud migrations that pairs rightsizing calculations with a live Claude AI analyst for strategy recommendations. It can ingest VMware vRealize Operations (vROps) utilization data and falls back to rule-based analysis when no AI key is set.",
+    "source": "github",
+    "repo": "rdsaiops"
+  },
+  {
+    "sno": 90,
+    "title": "AWS Database Migration Tool",
+    "description": "A Streamlit planner for AWS RDS/Aurora migrations that generates reader/writer instance recommendations and month-by-month cost breakdowns. It prices options live via boto3, adds Claude-generated analysis, and exports PDF reports with ReportLab.",
+    "source": "github",
+    "repo": "rdsaws"
+  },
+  {
+    "sno": 91,
+    "title": "vROps-Integrated RDS Migration Tool",
+    "description": "A variant of the AWS RDS migration planner that ingests VMware vRealize Operations (vROps) exports to size Aurora/RDS targets from real utilization data. It keeps the same reader/writer optimization, live boto3 pricing, and Claude-assisted recommendations with PDF export.",
+    "source": "github",
+    "repo": "rdsvrops"
+  },
+  {
+    "sno": 92,
+    "title": "Cloud Operations Resource Planning",
+    "description": "A Streamlit tool for building a multi-year staffing and resourcing plan for a cloud operations team. It includes enterprise session/audit management scaffolding and dashboards for headcount, cost and workload trends.",
+    "source": "github",
+    "repo": "resourceplan"
+  },
+  {
+    "sno": 93,
+    "title": "ReturnGuard AI",
+    "description": "A Streamlit app that scores e-commerce return requests for fraud risk and routes flagged cases through an approval workflow. It uses Claude for risk analysis, JWT/bcrypt authentication, SQLite storage, and email alerts for high-risk returns.",
+    "source": "github",
+    "repo": "returnguardai"
+  },
+  {
+    "sno": 94,
+    "title": "AWS EC2 SQL Sizing Calculator — Word Report",
+    "description": "A Streamlit calculator that right-sizes AWS EC2 instances for SQL Server workloads migrating from on-premises servers, across dev/QA/staging/production tiers. It takes CPU, RAM, storage-growth and IOPS inputs and exports a Word (.docx) sizing report.",
+    "source": "github",
+    "repo": "revec2dba"
+  },
+  {
+    "sno": 95,
+    "title": "SAP HANA Monitoring Copilot",
+    "description": "A Streamlit prototype of an AI-infused SAP HANA monitoring solution that consolidates KPIs from multiple sources into threshold-based RAG status and a chat copilot. It pairs Claude for reasoning with OpenAI embeddings for retrieval, plus an agentic remediation action center and an Agentic-AI-vs-FTE ROI model.",
+    "source": "github",
+    "repo": "saphanamonitor"
+  },
+  {
+    "sno": 96,
+    "title": "SQL Server Scaling Platform",
+    "description": "A Streamlit platform for planning SQL Server compute scaling on AWS, weighing bring-your-own-license (BYOL) costs against on-demand licensing. It layers in Datadog-style operational metrics and optional AWS pricing via boto3 to size infrastructure and staffing.",
+    "source": "github",
+    "repo": "sqlaoplanner"
+  },
+  {
+    "sno": 97,
+    "title": "AWS CloudWatch SQL Server Monitor",
+    "description": "A Streamlit dashboard that tracks SQL Server health from AWS CloudWatch Agent metrics, including buffer cache hit ratio, page life expectancy and batch requests. Each metric carries thresholds and remediation guidance, with an executive dashboard and an auto-remediation tab.",
+    "source": "github",
+    "repo": "sqlmon"
+  },
+  {
+    "sno": 98,
+    "title": "SQL Optimizer Suite",
+    "description": "A Streamlit tool that uses Claude to translate natural-language requests into optimized SQL and to analyze existing queries for performance issues. It returns the rewritten query, an explanation of the optimizations applied, and any assumptions made about the schema.",
+    "source": "github",
+    "repo": "sqlqueryopti"
+  },
+  {
+    "sno": 99,
+    "title": "SQL Server AI Optimizer Suite",
+    "description": "A Streamlit app that connects directly to live SQL Server instances (via pymssql/SQLAlchemy) for health checks and maintenance recommendations. Claude adds AI-generated insight on top of the collected metrics, with credentials pulled from Streamlit Cloud secrets.",
+    "source": "github",
+    "repo": "sqlservermaintain"
+  },
+  {
+    "sno": 100,
+    "title": "Smart Subscription Manager API",
+    "description": "A FastAPI backend for tracking recurring subscriptions, payments and savings for end users. It uses Claude to auto-detect subscriptions and bills, Stripe for payments, and exposes REST endpoints for users, subscriptions, negotiations, price alerts and savings reports.",
+    "source": "github",
+    "repo": "subscription-manager-backend"
+  },
+  {
+    "sno": 101,
+    "title": "TechGuardrails",
+    "description": "An enterprise Streamlit platform for AWS cloud governance, compliance, FinOps and security across the account lifecycle, spanning 21 pages and 21 enterprise modules. It combines policy-as-code, SCP management, AI-powered forecasting and batch remediation for Windows/Linux/EKS in a toggleable demo/live-AWS mode.",
+    "source": "github",
+    "repo": "techguard"
+  },
+  {
+    "sno": 102,
+    "title": "Cloud Compliance Canvas — Multi-Cloud",
+    "description": "An enterprise Streamlit platform for multi-cloud compliance, FinOps and security orchestration, mapping controls to SOC 2, PCI-DSS, HIPAA, GDPR and ISO 27001. It adds AWS Control Tower account-lifecycle management, an OPA-based policy engine, EKS/Kubernetes remediation, and AI-powered threat detection.",
+    "source": "github",
+    "repo": "techguardrails"
+  },
+  {
+    "sno": 103,
+    "title": "Telecom Churn Predictor",
+    "description": "A Streamlit app that scores telecom customers on churn risk and explains why, trained on the public Telco Customer Churn dataset. A tuned Random Forest model (84.5% ROC-AUC) drives per-customer scoring, with logistic-regression and decision-tree baselines for comparison.",
+    "source": "github",
+    "repo": "telecomchurn"
+  },
+  {
+    "sno": 104,
+    "title": "Terraform Code Generator",
+    "description": "A Streamlit tool that searches GitHub for real-world Terraform modules and patterns across official and community repositories. It ranks results by stars and relevance, fetches file contents via the GitHub API, and flags official-provider modules to speed up discovery.",
+    "source": "github",
+    "repo": "terraform-code-generator"
+  },
+  {
+    "sno": 105,
+    "title": "Terraform to CDK Converter",
+    "description": "A Streamlit tool that uses Claude to convert Terraform HCL into AWS CDK code in TypeScript or other languages. It favors L2/L3 constructs, adds explanatory comments, and can produce a detailed writeup of what changed and why.",
+    "source": "github",
+    "repo": "terraformtocdk"
+  },
+  {
+    "sno": 106,
+    "title": "Crypto Trading Bot",
+    "description": "A Streamlit app for automated and paper cryptocurrency trading via the ccxt exchange library. It computes technical indicators (SMA, EMA, RSI, MACD, Bollinger Bands) to drive trade signals and tracks balances, positions and trade history in real time.",
+    "source": "github",
+    "repo": "tradingbot"
+  },
+  {
+    "sno": 107,
+    "title": "TrustLayer AI",
+    "description": "An interactive Streamlit demo of an enterprise AI-reliability platform that detects LLM hallucinations before they reach users. It walks through 13 scenarios across 8 industries, 8 detection techniques, compliance mapping (EU AI Act, NIST AI RMF, SOC 2), and an ROI calculator.",
+    "source": "github",
+    "repo": "trustlayer-ai"
+  },
+  {
+    "sno": 108,
+    "title": "Container Security Platform",
+    "description": "A Streamlit platform for enterprise container vulnerability management, from scan results through prioritized findings. Claude powers AI-assisted risk analysis and remediation guidance, with Plotly dashboards for exposure and trend reporting.",
+    "source": "github",
+    "repo": "vulcontainers"
+  },
+  {
+    "sno": 109,
+    "title": "Windows Server Vulnerability Management",
+    "description": "A Streamlit console for scanning and tracking Windows Server vulnerabilities across AWS accounts and regions. It uses boto3 to pull inventory and findings and presents severity-coded dashboards for prioritizing remediation.",
+    "source": "github",
+    "repo": "vulnerabilitymgmt"
+  },
+  {
+    "sno": 110,
+    "title": "Windows Vulnerability AI Agent",
+    "description": "An agentic Streamlit application that scans Windows servers across multiple AWS accounts, patches them via SSM, and opens/tracks ServiceNow tickets with human-in-the-loop approval. Claude-driven analysis and decision agents recommend fixes mapped to NIST and CIS benchmark controls.",
+    "source": "github",
+    "repo": "windowsvul"
+  },
+  {
+    "sno": 111,
+    "title": "Cobalt Migration Analyzer",
+    "description": "A stateless Streamlit tool for cloud migration planning that computes sizing, pricing and TCO fresh on every run with zero server-side persistence. It compares on-premises costs to Azure/AWS, right-sizes instances from utilization data, and exports Excel/PDF reports with optional Claude AI recommendations.",
+    "source": "github",
+    "repo": "workloadmigrate"
+  },
+  {
+    "sno": 112,
+    "title": "Agent Team Product Studio",
+    "description": "A four-agent AI team (PM, Developer, Tester, End User) that turns a plain-language product idea into working, previewable software end to end. Each build runs in a sandboxed environment with a live preview server, streamed progress, and a downloadable project package.",
+    "source": "local",
+    "repo": null
+  },
+  {
+    "sno": 113,
+    "title": "Cobalt Migration Platform",
+    "description": "An AI-driven cloud migration accelerator that assesses, plans, and executes application migrations to AWS and Azure through Day-0 discovery, Day-1 build, and Day-2 operations workflows. A multi-agent backend handles discovery, complexity scoring, and target-architecture generation behind a React frontend, with execution history in Redis and Aurora MySQL.",
+    "source": "local",
+    "repo": null
+  },
+  {
+    "sno": 114,
+    "title": "Agentic AWS FinOps",
+    "description": "A FinOps platform where natural-language AI agents investigate real AWS cost data across multiple accounts using verifiable, read-only tool calls rather than guesswork. Built with React, FastAPI, and LangGraph, it supports multi-account cost fan-out, commitment pooling, and signed change-plan artifacts for a CI/CD pipeline to apply.",
+    "source": "local",
+    "repo": null
+  },
+  {
+    "sno": 115,
+    "title": "AWS Operations Agent",
+    "description": "A LangGraph-based operations agent that investigates AWS incidents and answers operational questions in natural language, backed by a choice of LLM providers. It ships with a mock mode of pre-built scenarios and an executive BI dashboard for demonstrating outcomes without touching live infrastructure.",
+    "source": "local",
+    "repo": null
+  },
+  {
+    "sno": 116,
+    "title": "AWS Transform Training Program",
+    "description": "A ten-module facilitator-led training curriculum covering VMware-to-AWS migration and modernization, from discovery and dependency mapping through wave planning, network conversion, and cutover. It includes a full worked end-to-end migration demo, glossary, FAQ, and facilitator guide.",
+    "source": "local",
+    "repo": null
+  },
+  {
+    "sno": 117,
+    "title": "AWS FinOps Intelligence Platform",
+    "description": "An enterprise FinOps dashboard for cost optimization across 100+ AWS accounts, with Holt-Winters spend forecasting and five autonomous agents for cost, anomaly, savings, tagging, and forecasting tasks. Built with React and FastAPI, with an optional Claude-powered agent layer over real or mocked AWS Cost Explorer data.",
+    "source": "local",
+    "repo": null
+  },
+  {
+    "sno": 118,
+    "title": "Agentic Bug Fixer",
+    "description": "A closed-loop autonomous debugging tool that runs Playwright against a live app, pulls the implicated source over SSH, and asks Claude to draft and apply a patch, then redeploys and re-verifies the fix. It iterates up to three times per run and supports a dry-run preview mode.",
+    "source": "local",
+    "repo": null
+  },
+  {
+    "sno": 119,
+    "title": "Certification Exam Simulator Suite",
+    "description": "A self-hosted Streamlit exam simulator for AI-certification practice exams, with question banks parsed directly from official practice PDFs. It offers timed mock exams, domain-tagged practice drills, a skill-times-confidence readiness score, and full attempt history, running as three independent sibling apps for different certification tracks.",
+    "source": "local",
+    "repo": null
+  },
+  {
+    "sno": 120,
+    "title": "CIS Cloud Shield",
+    "description": "An agentic AI platform for AWS vulnerability management that combines automated scanning with human-in-the-loop approval gated by ML confidence scoring. It executes real Linux and Windows patching and reboot orchestration via SSM and a CI/CD delegate, with a full remediation audit trail and ServiceNow integration.",
+    "source": "local",
+    "repo": null
+  },
+  {
+    "sno": 121,
+    "title": "AI Cloud Automation Platform",
+    "description": "A conversational, AI-guided self-service platform for provisioning governed cloud infrastructure across AWS and Azure from natural language requests. It generates and validates real Terraform with a self-healing repair loop, enforces policy-as-code guardrails, and integrates with ServiceNow for change approval and CMDB updates.",
+    "source": "local",
+    "repo": null
+  },
+  {
+    "sno": 122,
+    "title": "ContainerVul Vulnerability Manager",
+    "description": "A backend engine for AI-assisted container vulnerability management, combining CVE integration, exploit-reachability analysis, and an ML risk-scoring model. It includes an autonomous remediation workflow orchestrator and a Kubernetes cluster executor for applying fixes directly to running clusters.",
+    "source": "local",
+    "repo": null
+  },
+  {
+    "sno": 123,
+    "title": "BI Dashboard Security Center",
+    "description": "A persona-aware security add-on for an internal delivery and BI analytics dashboard, surfacing account MFA posture and risk alongside existing operational views. It ships as a standalone page plus an additive backend enhancement so it deploys without altering the existing site.",
+    "source": "local",
+    "repo": null
+  },
+  {
+    "sno": 124,
+    "title": "DB Performance AI Agent",
+    "description": "A LangGraph-based agent that parses database performance incidents, classifies likely root cause, and produces a remediation runbook. Built with a FastAPI backend and a React frontend, offering chat-driven triage and dashboards for tracking incidents end to end.",
+    "source": "local",
+    "repo": null
+  },
+  {
+    "sno": 125,
+    "title": "AI Digital Twin",
+    "description": "A streaming AI avatar application that answers questions using retrieval-augmented generation grounded in ingested documents. It combines a live-avatar video stream with a FastAPI backend, Claude for reasoning, and a vector database as the knowledge store.",
+    "source": "local",
+    "repo": null
+  },
+  {
+    "sno": 126,
+    "title": "Prelegal Contract Generator",
+    "description": "A legal-document generation tool that produces a mutual NDA from a guided form with a live document preview. It pairs a Next.js NDA creator with a growing template library covering DPAs, BAAs, SLAs, and partnership and pilot agreements.",
+    "source": "local",
+    "repo": null
+  },
+  {
+    "sno": 127,
+    "title": "GovScope",
+    "description": "A procurement intelligence platform that analyzes a large public government contracting dataset to surface vendor concentration risk, competition gaps, and supplier lock-in. It pairs a React/Recharts frontend with a FastAPI/Pandas backend and an AI analyst built on Claude with a fallback model.",
+    "source": "local",
+    "repo": null
+  },
+  {
+    "sno": 128,
+    "title": "Kiro AI Development Training",
+    "description": "A ten-module facilitator-led training curriculum on spec-driven development and an AI-driven development lifecycle methodology built around Kiro. It includes worked demos spanning SAP development, AWS migration and modernization, and general application development, plus a glossary, FAQ, and facilitator guide.",
+    "source": "local",
+    "repo": null
+  },
+  {
+    "sno": 129,
+    "title": "MCP Training Demo",
+    "description": "A minimal teaching example of the Model Context Protocol, exposing a sandboxed filesystem server with four tools for listing, reading, writing, and searching files. Includes a companion training deck and sample data for a guided walkthrough.",
+    "source": "local",
+    "repo": null
+  },
+  {
+    "sno": 130,
+    "title": "TGW Atlas",
+    "description": "A network diagnostics tool that maps a transit gateway estate across accounts, follows a packet through the gateway and its reply back, and flags where the two paths disagree. Detects asymmetric routes, one-way paths, blackholes, missing routes, and stateless ACL or security-group traps, with both cloud-hosted and air-gapped offline deployments.",
+    "source": "local",
+    "repo": null
+  },
+  {
+    "sno": 131,
+    "title": "AWS Transform Hub",
+    "description": "A modular migration governance hub covering discovery, governance, testing, and Day-2 operations for large-scale AWS transformation programs, with a control tower for tracking agent-driven tasks. Built with FastAPI and Next.js, and integrates directly with a companion cloud migration platform.",
+    "source": "local",
+    "repo": null
+  }
+]
