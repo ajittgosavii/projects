@@ -250,7 +250,7 @@ st.markdown(
 
       .method { font-family: var(--body); color: var(--muted); font-size: 0.8rem; line-height: 1.55;
                 margin-top: 1.5rem; padding-top: 0.9rem; border-top: 1px solid var(--rule); }
-      .method p { margin: 0 0 0.35rem; max-width: 62rem; }
+      .method p { margin: 0 0 0.35rem; }
     </style>
     """.replace("PILL_MARKERS", pill_markers),
     unsafe_allow_html=True,
@@ -363,10 +363,8 @@ with st.container(key="content"):
                     f"{total}.</div>", unsafe_allow_html=True)
 
     st.markdown(
-        '<div class="method"><p>Business Benefits are conservative, modelled estimates of potential annual savings '
-        "for a mid-size enterprise, not measured results. Labour savings are hours saved per year at a &#36;75/hr "
-        "blended rate; FinOps savings are 2–3% of an assumed &#36;1M/yr cloud bill. Each row shows its basis; the "
-        "bar under each figure compares it with the largest modelled saving.</p>"
+        '<div class="method"><p>Business Benefits are modelled estimates, not measured results: labour savings at '
+        "&#36;75/hr of hours saved, FinOps savings at 2–3% of an assumed &#36;1M/yr cloud bill.</p>"
         f"<p>{auth.LAB_NAME}. {auth.COLLAB}.</p></div>",
         unsafe_allow_html=True,
     )
