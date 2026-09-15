@@ -19,14 +19,14 @@ LAB_NAME = "ECHO AI Lab – Calgary"
 COLLAB = "In Collaboration with CIS CLD"
 MAX_ATTEMPTS, LOCKOUT_SECONDS = 5, 60
 ITERATIONS = 240_000
-# the Hexagon pillars as they read on the dark brand panel
+# the Hexagon pillars' markers on the dark brand panel: the same six palette slots, stepped for a dark surface
 PILLARS_ON_DARK = {
-    "AI Strategy & Engineering": "#8DB8FF",
-    "Data for AI": "#63D3DC",
-    "Process AI": "#BBA3FF",
-    "Agentic Legacy Modernization": "#F2B866",
-    "Physical AI": "#FF93A5",
-    "AI Trust": "#86D98F",
+    "AI Strategy & Engineering": "#3987e5",
+    "Data for AI": "#d95926",
+    "Process AI": "#199e70",
+    "Agentic Legacy Modernization": "#c98500",
+    "Physical AI": "#d55181",
+    "AI Trust": "#008300",
 }
 
 
@@ -96,6 +96,7 @@ _LOGIN_CSS = """
   .brand .pitch { color: #BFCAE0; font-size: 1.05rem; line-height: 1.6; margin: 1.1rem 0 2rem; max-width: 30rem; }
   .brand .pillars { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem 1.5rem;
                     font-size: 0.86rem; max-width: 30rem; }
+  .brand .pillars .pillar { color: #DCE4F2; }  /* text stays in ink; the hexagon marker carries the pillar */
   .brand .foot { color: #A9B8D2; font-size: 0.85rem; padding: 0 0 8.5rem; }
   .brand .echo { position: absolute; z-index: 1; right: -10rem; top: 50%; width: 36rem; height: 36rem;
                  transform: translateY(-50%); pointer-events: none; }
