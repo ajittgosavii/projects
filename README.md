@@ -1,6 +1,6 @@
 # Application Portfolio
 
-A Streamlit page listing every application in [github.com/ajittgosavii](https://github.com/ajittgosavii), local builds in `C:\aidemos`, and apps hosted on AWS. Each entry has a serial number, a title, a two-line description, and badges for where it lives (GitHub / C:\aidemos / AWS).
+A Streamlit page listing every application in [github.com/ajittgosavii](https://github.com/ajittgosavii), local builds in `C:\aidemos`, and apps hosted on AWS. Each entry has a serial number, a title, and a two-line description. Apps with several builds are listed once, with the other repositories shown as variants.
 
 ## Run locally
 

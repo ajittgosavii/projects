@@ -33,14 +33,13 @@ def render_table(rows: list[dict]) -> None:
                 for v in r["variants"]
             )
             title += f'<div class="variants">Variants: {links}</div>'
-        where = "".join(f'<span class="badge">{html.escape(w)}</span>' for w in r.get("where", []))
         body.append(
             f'<tr><td class="sno">{r["sno"]}</td><td class="title">{title}</td>'
-            f'<td>{html.escape(r["description"])}</td><td class="where">{where}</td></tr>'
+            f'<td>{html.escape(r["description"])}</td></tr>'
         )
     st.markdown(
         '<div class="wrap"><table class="portfolio"><thead><tr><th>S.No</th><th>Application Title</th>'
-        f'<th>Description</th><th>Where</th></tr></thead><tbody>{"".join(body)}</tbody></table></div>',
+        f'<th>Description</th></tr></thead><tbody>{"".join(body)}</tbody></table></div>',
         unsafe_allow_html=True,
     )
 
@@ -56,14 +55,10 @@ st.markdown(
         border-bottom: 1px solid rgba(128,128,128,0.2); line-height: 1.45; }
       table.portfolio td.sno { width: 4rem; text-align: right; font-variant-numeric: tabular-nums;
         color: rgba(128,128,128,0.95); }
-      table.portfolio td.title { width: 24%; font-weight: 600; }
-      table.portfolio td.where { width: 9rem; }
+      table.portfolio td.title { width: 26%; font-weight: 600; }
       table.portfolio a { text-decoration: none; }
       .variants { margin-top: 0.25rem; font-weight: 400; font-size: 0.78rem; line-height: 1.5;
         color: rgba(128,128,128,0.95); }
-      .badge { display: inline-block; margin: 0 0.3rem 0.3rem 0; padding: 0.05rem 0.45rem;
-        border: 1px solid rgba(128,128,128,0.45); border-radius: 0.6rem; font-size: 0.75rem;
-        white-space: nowrap; }
     </style>
     """,
     unsafe_allow_html=True,
@@ -77,18 +72,6 @@ st.caption(
     "and apps hosted on AWS. Titles link to the GitHub repository where there is one; "
     "apps with several builds are listed once, with the other repositories shown as variants."
 )
-
-c1, c2, c3, c4 = st.columns(4)
-c1.metric("Applications", len(projects))
-c2.metric("On GitHub", sum("GitHub" in p.get("where", []) for p in projects))
-c3.metric("In C:\\aidemos", sum("C:\\aidemos" in p.get("where", []) for p in projects))
-c4.metric("Hosted on AWS", sum("AWS" in p.get("where", []) for p in projects))
-
-query = st.text_input("Search", placeholder="Filter by title or description, e.g. FinOps, RDS, Terraform")
-if query:
-    q = query.lower()
-    projects = [p for p in projects if q in p["title"].lower() or q in p["description"].lower()]
-    st.caption(f"{len(projects)} match{'es' if len(projects) != 1 else ''}")
 
 for key, heading in SOURCES.items():
     rows = [p for p in projects if p["source"] == key]
