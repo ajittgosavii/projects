@@ -204,7 +204,9 @@ st.markdown(
       table.portfolio tbody tr:last-child td { border-bottom: 0; }
       table.portfolio tbody tr:hover td { background: #F6F8FC; }
       table.portfolio tbody tr:hover td:first-child { box-shadow: inset 3px 0 0 var(--c); }
-      td.sno { text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
+      td.sno { color: var(--muted); font-variant-numeric: tabular-nums; }
+      /* the short columns are centred, headers included; long-text columns stay left-aligned */
+      table.portfolio .sno, table.portfolio .cat, table.portfolio .hex, table.portfolio .drivers { text-align: center; }
       td.title { font-weight: 600; }
       td.title a { color: var(--ink); text-decoration: none; }
       td.title a:hover { color: var(--link); text-decoration: underline; }
@@ -232,7 +234,8 @@ st.markdown(
         table.portfolio colgroup, table.portfolio thead { display: none; }
         table.portfolio tr { padding: 1rem 1.1rem; border-bottom: 1px solid var(--rule); }
         table.portfolio tbody tr:last-child { border-bottom: 0; }
-        table.portfolio td { border: 0; padding: 0.3rem 0; }
+        table.portfolio td, table.portfolio td.sno, table.portfolio td.cat, table.portfolio td.hex,
+        table.portfolio td.drivers { border: 0; padding: 0.3rem 0; text-align: left; }
         table.portfolio td::before { content: attr(data-label); display: block; font-family: var(--cond);
                                      font-weight: 600; font-size: 0.74rem; color: var(--muted); }
         table.portfolio td.sno, table.portfolio td.title { display: inline-block; font-size: 1rem; }
@@ -337,7 +340,7 @@ with st.container(key="content"):
     if rows:
         of = f"<b>{len(shown)}</b> of <b>{total}</b>" if len(shown) != total else f"<b>{total}</b>"
         colgroup = "".join(f'<col style="width:{w}">' for _, _, w in COLUMNS)
-        heads = "".join(f"<th>{h}</th>" for h, _, _ in COLUMNS)
+        heads = "".join(f'<th class="{c}">{h}</th>' for h, c, _ in COLUMNS)
         body = "".join(row_html(r, i, max_usd) for i, r in enumerate(rows))
         st.markdown(
             f'<div class="range">Showing <b>{start + 1}–{start + len(rows)}</b> of {of} applications</div>'
