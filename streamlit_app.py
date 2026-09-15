@@ -1,4 +1,4 @@
-"""Project portfolio: every application in github.com/ajittgosavii plus local builds."""
+"""Project portfolio: every application in github.com/ajittgosavii, local builds, and AWS-hosted apps."""
 
 import html
 import json
@@ -7,7 +7,11 @@ from pathlib import Path
 import streamlit as st
 
 DATA_FILE = Path(__file__).parent / "projects.json"
-SOURCES = {"github": "GitHub repositories", "local": "Local builds (not on GitHub)"}
+SOURCES = {
+    "github": "GitHub repositories",
+    "local": "Local builds in C:\\aidemos (not on GitHub)",
+    "aws": "Other applications hosted on AWS",
+}
 
 st.set_page_config(page_title="Application Portfolio", page_icon="🗂️", layout="wide")
 
@@ -23,13 +27,14 @@ def render_table(rows: list[dict]) -> None:
         title = html.escape(r["title"])
         if r.get("repo"):
             title = f'<a href="https://github.com/ajittgosavii/{html.escape(r["repo"])}" target="_blank">{title}</a>'
+        where = "".join(f'<span class="badge">{html.escape(w)}</span>' for w in r.get("where", []))
         body.append(
             f'<tr><td class="sno">{r["sno"]}</td><td class="title">{title}</td>'
-            f'<td>{html.escape(r["description"])}</td></tr>'
+            f'<td>{html.escape(r["description"])}</td><td class="where">{where}</td></tr>'
         )
     st.markdown(
-        '<table class="portfolio"><thead><tr><th>S.No</th><th>Application Title</th>'
-        f'<th>Description</th></tr></thead><tbody>{"".join(body)}</tbody></table>',
+        '<div class="wrap"><table class="portfolio"><thead><tr><th>S.No</th><th>Application Title</th>'
+        f'<th>Description</th><th>Where</th></tr></thead><tbody>{"".join(body)}</tbody></table></div>',
         unsafe_allow_html=True,
     )
 
@@ -37,6 +42,7 @@ def render_table(rows: list[dict]) -> None:
 st.markdown(
     """
     <style>
+      .wrap { overflow-x: auto; }
       table.portfolio { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
       table.portfolio th { text-align: left; padding: 0.6rem 0.75rem;
         border-bottom: 2px solid rgba(128,128,128,0.45); white-space: nowrap; }
@@ -44,8 +50,12 @@ st.markdown(
         border-bottom: 1px solid rgba(128,128,128,0.2); line-height: 1.45; }
       table.portfolio td.sno { width: 4rem; text-align: right; font-variant-numeric: tabular-nums;
         color: rgba(128,128,128,0.95); }
-      table.portfolio td.title { width: 26%; font-weight: 600; }
+      table.portfolio td.title { width: 24%; font-weight: 600; }
+      table.portfolio td.where { width: 9rem; }
       table.portfolio a { text-decoration: none; }
+      .badge { display: inline-block; margin: 0 0.3rem 0.3rem 0; padding: 0.05rem 0.45rem;
+        border: 1px solid rgba(128,128,128,0.45); border-radius: 0.6rem; font-size: 0.75rem;
+        white-space: nowrap; }
     </style>
     """,
     unsafe_allow_html=True,
@@ -55,15 +65,15 @@ projects = load_projects()
 
 st.title("Application Portfolio")
 st.caption(
-    "Every application in [github.com/ajittgosavii](https://github.com/ajittgosavii), "
-    "plus local builds. Titles link to the GitHub repository where there is one."
+    "Every application in [github.com/ajittgosavii](https://github.com/ajittgosavii), local builds, "
+    "and apps hosted on AWS. Titles link to the GitHub repository where there is one."
 )
 
-counts = {k: sum(p["source"] == k for p in projects) for k in SOURCES}
-c1, c2, c3 = st.columns(3)
+c1, c2, c3, c4 = st.columns(4)
 c1.metric("Applications", len(projects))
-c2.metric("On GitHub", counts["github"])
-c3.metric("Local builds", counts["local"])
+c2.metric("On GitHub", sum("GitHub" in p.get("where", []) for p in projects))
+c3.metric("In C:\\aidemos", sum("C:\\aidemos" in p.get("where", []) for p in projects))
+c4.metric("Hosted on AWS", sum("AWS" in p.get("where", []) for p in projects))
 
 query = st.text_input("Search", placeholder="Filter by title or description, e.g. FinOps, RDS, Terraform")
 if query:

@@ -1,6 +1,6 @@
 # Application Portfolio
 
-A Streamlit page listing every application in [github.com/ajittgosavii](https://github.com/ajittgosavii), plus local builds that aren't on GitHub. Each entry has a serial number, a title, and a two-line description.
+A Streamlit page listing every application in [github.com/ajittgosavii](https://github.com/ajittgosavii), local builds in `C:\aidemos`, and apps hosted on AWS. Each entry has a serial number, a title, a two-line description, and badges for where it lives (GitHub / C:\aidemos / AWS).
 
 ## Run locally
 
@@ -15,6 +15,6 @@ New app → repository `ajittgosavii/projects`, branch `main`, main file `stream
 
 ## Updating the list
 
-All entries are in `projects.json` (`sno`, `title`, `description`, `source` = `github` | `local`, `repo`). Edit that file and push; the page reloads from it.
+All entries are in `projects.json` (`sno`, `title`, `description`, `source` = `github` | `local` | `aws`, `repo`, `where`). Edit that file and push; the page reloads from it.
 
 Not listed: empty or placeholder repos, forks, and private repos.
