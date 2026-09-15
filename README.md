@@ -15,6 +15,17 @@ streamlit run streamlit_app.py
 
 New app → repository `ajittgosavii/projects`, branch `main`, main file `streamlit_app.py`.
 
+## Sign-in
+
+The page opens on the ECHO AI Lab – Calgary login. Accounts are kept in the app's secrets (Streamlit Cloud → Manage app → Settings → Secrets, or `.streamlit/secrets.toml` locally, which is gitignored), as salted PBKDF2 hashes:
+
+```toml
+[auth.users]
+"echo-admin" = "pbkdf2_sha256$240000$<salt>$<digest>"
+```
+
+Add a user by hashing their password: `python -c "import auth; print(auth.hash_password('their-password'))"`. The login protects the page, not the repo: `projects.json` is readable by anyone who can see this repository.
+
 ## Updating the list
 
 All entries are in `projects.json` (`sno`, `title`, `description`, `source` = `github` | `local` | `aws`, `repo`, `where`). Edit that file and push; the page reloads from it.

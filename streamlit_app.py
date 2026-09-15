@@ -7,6 +7,8 @@ from pathlib import Path
 
 import streamlit as st
 
+import auth
+
 DATA_FILE = Path(__file__).parent / "projects.json"
 GITHUB = "https://github.com/ajittgosavii/"
 PAGE_SIZES = (10, 20, 50)
@@ -20,7 +22,7 @@ PILLARS = {
     "AI Trust": "#23632A",
 }
 
-st.set_page_config(page_title="Application Portfolio", page_icon="🗂️", layout="wide")
+st.set_page_config(page_title="ECHO AI Lab – Calgary", page_icon="🔷", layout="wide")
 
 
 @st.cache_data
@@ -66,6 +68,10 @@ st.markdown(
               --cond:'IBM Plex Sans Condensed', 'Arial Narrow', 'Segoe UI', sans-serif; }
       .block-container { padding-top: 2.25rem; padding-bottom: 3rem; max-width: 1560px; }
       footer { visibility: hidden; }
+
+      .lockup { display: flex; align-items: center; gap: 0.75rem; font-family: var(--body); }
+      .lockup .lab { font-family: var(--cond); font-weight: 600; font-size: 1.1rem; color: var(--ink); line-height: 1.2; }
+      .lockup .collab { font-size: 0.78rem; color: var(--muted); }
 
       .masthead { font-family: var(--body); color: var(--ink); padding-bottom: 1.25rem;
                   border-bottom: 1px solid var(--rule); margin-bottom: 1.1rem; }
@@ -119,6 +125,17 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
+if not auth.require_login():
+    st.stop()
+
+bar_left, bar_right = st.columns([8, 1], vertical_alignment="center")
+bar_left.markdown(
+    f'<div class="lockup">{auth.logo_svg(36, "bar")}<div><div class="lab">{auth.LAB_NAME}</div>'
+    f'<div class="collab">{auth.COLLAB}</div></div></div>',
+    unsafe_allow_html=True,
+)
+bar_right.button("Sign out", key="signout", on_click=auth.sign_out, width="stretch")
 
 projects = load_projects(DATA_FILE.stat().st_mtime)
 total = len(projects)
