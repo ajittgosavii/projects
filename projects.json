@@ -43,7 +43,7 @@
   },
   {
     "sno": 3,
-    "title": "Gen AI ROI & TCO Calculator",
+    "title": "AI Estimator for LLMs",
     "description": "A calculator for estimating the multi-year total cost of ownership and ROI of a generative-AI initiative, broken down by API, infrastructure, development, and operations spend. Streamlit app with PDF report export, industry benchmarks, and scenario comparison.",
     "category": "AI Adoption",
     "hexagon": "AI Strategy & Engineering",
@@ -861,8 +861,8 @@
   },
   {
     "sno": 35,
-    "title": "OS & Database Lifecycle Tracker",
-    "description": "A multi-agent app that uses Claude web search to pull live end-of-life and end-of-support dates for 18 OS families and 20 database products. Streamlit, with per-platform AI migration recommendations and scheduled data refreshes.",
+    "title": "Application Lifecycle Tracker",
+    "description": "An AI-powered end-of-life / end-of-support risk platform tracking support dates for operating systems, databases and runtimes such as Windows, Linux, Oracle, SQL Server, PostgreSQL, Tomcat, .NET and Node.js. It scores each version by risk proximity and generates AI upgrade recommendations to stay compliant with PCI-DSS, HIPAA, NIST and ISO 27001.",
     "category": "IT Lifecycle Management",
     "hexagon": "Agentic Legacy Modernization",
     "stack": [
@@ -1629,8 +1629,8 @@
   },
   {
     "sno": 66,
-    "title": "Agent Team Product Studio",
-    "description": "A four-agent AI team (PM, Developer, Tester, End User) that turns a plain-language product idea into working, previewable software end to end. Each build runs in a sandboxed environment with a live preview server, streamed progress, and a downloadable project package.",
+    "title": "AI Agents Based Application Development Platform",
+    "description": "A 'feature factory' where a pipeline of 14 specialised AI agents (researcher, product manager, developer, security, QA, compliance, DevOps, DBA and more) turns a feature request into production-ready code with quality gates. It runs up to three iterative cycles covering security review, PCI-DSS/GDPR compliance, migration scripts, DevOps manifests and a live preview.",
     "category": "Software Engineering",
     "hexagon": "AI Strategy & Engineering",
     "stack": [
@@ -1681,8 +1681,8 @@
   },
   {
     "sno": 68,
-    "title": "AWS Operations Agent",
-    "description": "A LangGraph-based operations agent that investigates AWS incidents and answers operational questions in natural language, backed by a choice of LLM providers. It ships with a mock mode of pre-built scenarios and an executive BI dashboard for demonstrating outcomes without touching live infrastructure.",
+    "title": "Multi-Cloud AI Operations Platform",
+    "description": "An AIOps platform where a team of specialised AI agents monitors, diagnoses and remediates cloud infrastructure issues across AWS, Azure and Google Cloud. LangGraph orchestration with a choice of LLM providers, ServiceNow integration, SLO tracking, incident automation and an executive BI dashboard.",
     "category": "Cloud Operations",
     "hexagon": "AI Strategy & Engineering",
     "stack": [
