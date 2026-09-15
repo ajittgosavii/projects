@@ -175,6 +175,9 @@ st.markdown(
       /* filters */
       .st-key-filters { margin-bottom: 0.4rem; }
       .st-key-clear button p { white-space: nowrap; }
+      /* newer Streamlit lays pills out on one clipped line; make them wrap instead of hiding */
+      .st-key-f_pillar [data-testid="stButtonGroup"], .st-key-f_pillar [data-testid="stButtonGroup"] > div {
+        flex-wrap: wrap !important; overflow: visible !important; }
       .st-key-filters label p { font-family: var(--cond); font-weight: 600; font-size: 0.84rem; color: #3E4859; }
       .st-key-f_pillar button p::before { content: ""; display: inline-block; width: 0.62rem; height: 0.7rem;
         margin-right: 0.4rem; transform: translateY(0.05rem);
@@ -322,8 +325,9 @@ with st.container(key="content"):
     )
 
     with st.container(key="filters"):
-        pill_col, cat_col, sort_col, clear_col = st.columns([5.2, 2, 2, 1.35], vertical_alignment="bottom")
-        pill_col.pills("Infosys Hexagon", list(PILLARS), selection_mode="multi", key="f_pillar", on_change=reset_page)
+        # the pillar buttons get a full-width row of their own, so all six always fit
+        st.pills("Infosys Hexagon", list(PILLARS), selection_mode="multi", key="f_pillar", on_change=reset_page)
+        cat_col, sort_col, clear_col, _ = st.columns([2.2, 2.2, 1.1, 4.5], vertical_alignment="bottom")
         cat_col.selectbox("Category", [ALL_CATEGORIES, *categories], key="f_cat", on_change=reset_page)
         sort_col.selectbox("Sort by", list(SORTS), key="f_sort", on_change=reset_page)
         clear_col.button("Clear filters", key="clear", on_click=clear_filters, disabled=not filtered, width="stretch")
