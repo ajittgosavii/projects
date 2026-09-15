@@ -37,11 +37,17 @@ def render_table(rows: list[dict]) -> None:
             f'<tr><td class="sno">{r["sno"]}</td><td class="title">{title}</td>'
             f'<td>{html.escape(r["description"])}</td>'
             f'<td class="category">{html.escape(r["category"])}</td>'
-            f'<td class="hexagon">{html.escape(r["hexagon"])}</td></tr>'
+            f'<td class="hexagon">{html.escape(r["hexagon"])}</td>'
+            f'<td class="stack">{html.escape(", ".join(r["stack"]) or "—")}</td>'
+            f'<td class="drivers">{html.escape(r["drivers"])}</td>'
+            f'<td class="benefit">{html.escape(r["benefit"])}'
+            f'<div class="savings">Est. ~${r["savings_usd"] / 1000:,.0f}K/yr</div>'
+            f'<div class="basis">{html.escape(r["savings_basis"])}</div></td></tr>'
         )
     st.markdown(
         '<div class="wrap"><table class="portfolio"><thead><tr><th>S.No</th><th>Application Title</th>'
-        '<th>Description</th><th>Category</th><th>Infosys Hexagon</th></tr></thead>'
+        '<th>Description</th><th>Category</th><th>Infosys Hexagon</th><th>Technology Stack</th>'
+        '<th>Business Drivers</th><th>Business Benefits</th></tr></thead>'
         f'<tbody>{"".join(body)}</tbody></table></div>',
         unsafe_allow_html=True,
     )
@@ -58,7 +64,13 @@ st.markdown(
         border-bottom: 1px solid rgba(128,128,128,0.2); line-height: 1.45; }
       table.portfolio td.sno { width: 4rem; text-align: right; font-variant-numeric: tabular-nums;
         color: rgba(128,128,128,0.95); }
-      table.portfolio td.title { width: 22%; font-weight: 600; }
+      table.portfolio td.title { width: 18%; font-weight: 600; }
+      table.portfolio td.benefit { width: 14rem; }
+      table.portfolio td.stack { width: 12rem; font-size: 0.85rem; }
+      table.portfolio td.drivers { width: 10rem; }
+      table.portfolio { min-width: 72rem; }
+      .savings { margin-top: 0.3rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+      .basis { font-size: 0.75rem; color: rgba(128,128,128,0.95); }
       table.portfolio td.category { width: 10rem; }
       table.portfolio td.hexagon { width: 11rem; }
       table.portfolio a { text-decoration: none; }
@@ -76,6 +88,11 @@ st.caption(
     "Every application in [github.com/ajittgosavii](https://github.com/ajittgosavii), local builds, "
     "and apps hosted on AWS. Titles link to the GitHub repository where there is one; "
     "apps with several builds are listed once, with the other repositories shown as variants."
+)
+st.caption(
+    "Business Benefits savings are conservative, modelled estimates of potential annual savings for a "
+    "mid-size enterprise, not measured results. Labour savings = hours saved per year × a $75/hr blended "
+    "rate; FinOps savings = 2–3% of an assumed $1M/yr cloud bill."
 )
 
 for key, heading in SOURCES.items():

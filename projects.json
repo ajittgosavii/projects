@@ -5,6 +5,16 @@
     "description": "An agentic AWS vulnerability-scanning demo built around planning, reflection, and analysis agent roles that iteratively investigate security findings. Streamlit front end with boto3 for AWS discovery and Claude for the agent reasoning loop.",
     "category": "Security & Compliance",
     "hexagon": "AI Trust",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "AWS SDK (boto3)",
+      "Pandas"
+    ],
+    "drivers": "Risk reduction · Compliance",
+    "benefit": "Faster triage of AWS security findings",
+    "savings_usd": 11250,
+    "savings_basis": "~150 hrs/yr saved",
     "source": "github",
     "repo": "agenticaivul",
     "where": [
@@ -17,6 +27,14 @@
     "description": "A Streamlit tool that submits pasted code to Claude via structured tool-calling and returns categorized bugs, security issues, and performance findings with severity badges. A single-file app built directly on the Anthropic SDK's JSON-schema tool output.",
     "category": "Software Engineering",
     "hexagon": "AI Strategy & Engineering",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)"
+    ],
+    "drivers": "Developer productivity · Quality",
+    "benefit": "Catches bugs and security issues before human review",
+    "savings_usd": 11250,
+    "savings_basis": "~150 hrs/yr saved",
     "source": "github",
     "repo": "aidemo-frist",
     "where": [
@@ -29,6 +47,16 @@
     "description": "A calculator for estimating the multi-year total cost of ownership and ROI of a generative-AI initiative, broken down by API, infrastructure, development, and operations spend. Streamlit app with PDF report export, industry benchmarks, and scenario comparison.",
     "category": "AI Adoption",
     "hexagon": "AI Strategy & Engineering",
+    "stack": [
+      "Streamlit",
+      "Pandas",
+      "Plotly",
+      "ReportLab (PDF)"
+    ],
+    "drivers": "Investment clarity",
+    "benefit": "Faster, defensible GenAI business cases",
+    "savings_usd": 6000,
+    "savings_basis": "~80 hrs/yr saved",
     "source": "github",
     "repo": "aiestimator",
     "where": [
@@ -41,6 +69,17 @@
     "description": "Monitors AI/ML model and pipeline health, with a companion portal for configuring ingestion plugins, webhooks and Slack alerting. Streamlit with Firebase authentication, role-based admin and Plotly dashboards.",
     "category": "MLOps",
     "hexagon": "AI Strategy & Engineering",
+    "stack": [
+      "Streamlit",
+      "Google Cloud SDK",
+      "Firebase",
+      "Pandas",
+      "Plotly"
+    ],
+    "drivers": "Reliability · AI quality",
+    "benefit": "Earlier detection of model and pipeline failures",
+    "savings_usd": 15000,
+    "savings_basis": "~200 hrs/yr saved",
     "source": "github",
     "repo": "aimlobs",
     "where": [
@@ -56,6 +95,16 @@
     "description": "An airline transaction-lifecycle tracker letting customer-service teams query bookings, payments, and refunds in natural language and investigate failures across the search-to-refund journey. Streamlit app with a Claude-powered chat assistant and role-based access.",
     "category": "Aviation",
     "hexagon": "Process AI",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "Docker",
+      "Pandas"
+    ],
+    "drivers": "Customer experience · Productivity",
+    "benefit": "Faster resolution of booking, payment and refund queries",
+    "savings_usd": 30000,
+    "savings_basis": "~400 hrs/yr saved",
     "source": "github",
     "repo": "airlines",
     "where": [
@@ -68,6 +117,18 @@
     "description": "Recommends AWS RDS/Aurora configurations from on-premises database metrics, with Claude-written cost and migration guidance. Streamlit, with Google OAuth, AWS pricing lookup, backup planning and PDF report export.",
     "category": "Database Migration",
     "hexagon": "Agentic Legacy Modernization",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "Pandas",
+      "Plotly",
+      "ReportLab (PDF)",
+      "Excel export"
+    ],
+    "drivers": "Modernisation · Licence cost reduction",
+    "benefit": "Right-sized RDS/Aurora targets in less sizing time",
+    "savings_usd": 15000,
+    "savings_basis": "~200 hrs/yr saved",
     "source": "github",
     "repo": "aitoolrds",
     "where": [
@@ -83,6 +144,14 @@
     "description": "A structured decision-debate tool where two Claude-powered agents argue for and against a proposed decision over three rounds, then a neutral Claude judge scores the arguments. Streamlit app styled as a dark 'war room' console.",
     "category": "Decision Intelligence",
     "hexagon": "Process AI",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)"
+    ],
+    "drivers": "Decision quality",
+    "benefit": "Stress-tests decisions before commitment",
+    "savings_usd": 4500,
+    "savings_basis": "~60 hrs/yr saved",
     "source": "github",
     "repo": "aiwar",
     "where": [
@@ -95,6 +164,18 @@
     "description": "A SQL Server performance-monitoring and triage tool with read-only database connections, enterprise security controls (MFA, encryption, audit logging), and configurable alert thresholds. Streamlit app supporting pyodbc/pymssql connections and an optional local Ollama LLM for analysis.",
     "category": "Database",
     "hexagon": "Data for AI",
+    "stack": [
+      "Streamlit",
+      "PostgreSQL",
+      "SQL Server",
+      "SQLAlchemy",
+      "Pandas",
+      "Plotly"
+    ],
+    "drivers": "Operational efficiency · Reliability",
+    "benefit": "Faster SQL Server performance triage",
+    "savings_usd": 11250,
+    "savings_basis": "~150 hrs/yr saved",
     "source": "github",
     "repo": "appdbperform",
     "where": [
@@ -107,6 +188,13 @@
     "description": "An AWS CDK (Python) application that automates provisioning of Amazon WorkSpaces via a Lambda-backed workflow. Infrastructure-as-code project rather than an end-user UI, deployed with the CDK CLI.",
     "category": "End-User Computing",
     "hexagon": "AI Strategy & Engineering",
+    "stack": [
+      "AWS CDK"
+    ],
+    "drivers": "Operational efficiency · Speed",
+    "benefit": "Automated desktop provisioning, fewer manual builds",
+    "savings_usd": 11250,
+    "savings_basis": "~150 hrs/yr saved",
     "source": "github",
     "repo": "aws-workspaces-portal",
     "where": [
@@ -119,6 +207,17 @@
     "description": "A multi-account compliance and remediation platform integrating Security Hub, Config, GuardDuty, Inspector, SCPs, OPA, and KICS, with AI-generated remediation code via Claude/Bedrock. Streamlit app supporting GitOps-based policy management and account lifecycle automation.",
     "category": "Security & Compliance",
     "hexagon": "AI Trust",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "AWS SDK (boto3)",
+      "Pandas",
+      "Plotly"
+    ],
+    "drivers": "Risk reduction · Compliance",
+    "benefit": "Less manual compliance evidence and remediation",
+    "savings_usd": 22500,
+    "savings_basis": "~300 hrs/yr saved",
     "source": "github",
     "repo": "awscompliance",
     "where": [
@@ -131,6 +230,17 @@
     "description": "A multi-account AWS cost-analysis dashboard with AI-generated savings insights and spend-anomaly alerts. Streamlit app built on boto3 and Claude, with its own login layer for enterprise users.",
     "category": "FinOps",
     "hexagon": "Data for AI",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "AWS SDK (boto3)",
+      "Pandas",
+      "Plotly"
+    ],
+    "drivers": "Cost optimisation · Accountability",
+    "benefit": "Surfaces savings opportunities and spend anomalies",
+    "savings_usd": 30000,
+    "savings_basis": "3% of a $1M/yr cloud bill",
     "source": "github",
     "repo": "awscost",
     "where": [
@@ -143,6 +253,17 @@
     "description": "A 132-question readiness assessment covering AWS Control Tower migration and serverless ('Golden Architecture') adoption across 22 domains, with risk-weighted scoring. Streamlit app that uses Claude for gap analysis, roadmaps, and executive reporting.",
     "category": "Cloud Migration",
     "hexagon": "Agentic Legacy Modernization",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "Docker",
+      "Plotly",
+      "ReportLab (PDF)"
+    ],
+    "drivers": "Modernisation · Risk reduction",
+    "benefit": "Structured cloud-readiness assessment in days, not weeks",
+    "savings_usd": 12000,
+    "savings_basis": "~160 hrs/yr saved",
     "source": "github",
     "repo": "awsctserv",
     "where": [
@@ -155,6 +276,17 @@
     "description": "A Policy-as-Code governance console for AWS Organizations at scale, orchestrating Terraform, KICS scanning, and OPA/Sentinel policy checks through a GitHub-based CI/CD pipeline. Streamlit front end for reviewing and applying SCPs across hundreds of accounts.",
     "category": "Security & Compliance",
     "hexagon": "AI Trust",
+    "stack": [
+      "Streamlit",
+      "AWS SDK (boto3)",
+      "Pandas",
+      "Plotly",
+      "Excel export"
+    ],
+    "drivers": "Risk reduction · Compliance",
+    "benefit": "Policy violations caught before deployment",
+    "savings_usd": 18750,
+    "savings_basis": "~250 hrs/yr saved",
     "source": "github",
     "repo": "awsguardrails",
     "where": [
@@ -167,6 +299,20 @@
     "description": "An interactive simulator and AI advisor for designing AWS multi-account landing zones, visualizing the org structure, network topology, and guardrails as you configure them. Streamlit app with a Well-Architected scorecard, one-click remediations, and Claude/GPT-4o design reviews.",
     "category": "Cloud Infrastructure",
     "hexagon": "AI Strategy & Engineering",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "OpenAI",
+      "AWS SDK (boto3)",
+      "PostgreSQL",
+      "Pandas",
+      "Plotly",
+      "PDF export"
+    ],
+    "drivers": "Speed · Governance",
+    "benefit": "Faster landing-zone design decisions",
+    "savings_usd": 12000,
+    "savings_basis": "~160 hrs/yr saved",
     "source": "github",
     "repo": "awslz",
     "where": [
@@ -180,6 +326,17 @@
     "description": "An agentic-AI prototype for AWS credential remediation and immutable backup governance, flagging over-privileged credentials and mapping backup coverage across an app inventory. Streamlit demo with a mocked AWS intelligence client and a ServiceNow ticketing integration.",
     "category": "Security & Compliance",
     "hexagon": "AI Trust",
+    "stack": [
+      "Streamlit",
+      "OpenAI",
+      "AWS SDK (boto3)",
+      "Pandas",
+      "Plotly"
+    ],
+    "drivers": "Risk reduction · Compliance",
+    "benefit": "Reduces credential and backup exposure risk",
+    "savings_usd": 11250,
+    "savings_basis": "~150 hrs/yr saved",
     "source": "github",
     "repo": "awssec",
     "where": [
@@ -193,6 +350,20 @@
     "description": "An AI-powered review platform that scores AWS architectures against the Well-Architected Framework's six pillars and produces reports. Streamlit editions add natural-language design, Terraform import, an AI Lens and EKS/FinOps modules; a React + Python edition runs on ECS Fargate with Cognito and Azure AD sign-in.",
     "category": "Cloud Infrastructure",
     "hexagon": "AI Strategy & Engineering",
+    "stack": [
+      "Streamlit",
+      "React",
+      "Claude (Anthropic)",
+      "AWS SDK (boto3)",
+      "Google Cloud SDK",
+      "Firebase",
+      "AWS ECS Fargate",
+      "Amazon Cognito"
+    ],
+    "drivers": "Speed · Governance",
+    "benefit": "Automated Well-Architected reviews",
+    "savings_usd": 22500,
+    "savings_basis": "~300 hrs/yr saved",
     "source": "github",
     "repo": "awswaf",
     "where": [
@@ -211,6 +382,20 @@
     "description": "A 15-module enterprise platform for governing multi-account AWS estates: account provisioning, networking, EKS, policy guardrails, FinOps, security and compliance. Streamlit, boto3 and Claude; builds add Azure AD/Entra SSO, cross-account AssumeRole, an EKS design wizard, a resource scanner and an AWS + Azure edition.",
     "category": "Cloud Infrastructure",
     "hexagon": "AI Strategy & Engineering",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "AWS SDK (boto3)",
+      "Google Cloud SDK",
+      "Firebase",
+      "Pandas",
+      "Plotly",
+      "NetworkX"
+    ],
+    "drivers": "Speed · Governance",
+    "benefit": "Self-service multi-account cloud operations",
+    "savings_usd": 60000,
+    "savings_basis": "~800 hrs/yr saved",
     "source": "github",
     "repo": "awswafazure",
     "where": [
@@ -235,6 +420,20 @@
     "description": "A 15-tab Streamlit planning tool for migrating Citrix VDI environments (CVAD, DaaS, XenApp/XenDesktop) to AWS End User Computing services. Covers discovery questionnaires, persona-to-service mapping, 3-year TCO modeling, a best-practices assessment, IaC generation, and a Claude/OpenAI advisor.",
     "category": "End-User Computing",
     "hexagon": "Agentic Legacy Modernization",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "OpenAI",
+      "PostgreSQL",
+      "Pandas",
+      "Plotly",
+      "ReportLab (PDF)",
+      "Excel export"
+    ],
+    "drivers": "Modernisation · Operational efficiency",
+    "benefit": "Faster VDI migration planning",
+    "savings_usd": 15000,
+    "savings_basis": "~200 hrs/yr saved",
     "source": "github",
     "repo": "awswkspc",
     "where": [
@@ -248,6 +447,16 @@
     "description": "A Streamlit demo of an Azure cloud-operations platform spanning six architecture layers, from a hub-spoke landing zone to a Gen AI engine. Ships seven AI features spanning NL-to-Bicep generation, an ops chatbot, drift and access-anomaly detection, network posture, FinOps, and risk-scored approvals.",
     "category": "Cloud Operations",
     "hexagon": "AI Strategy & Engineering",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "Pandas",
+      "Plotly"
+    ],
+    "drivers": "Operational efficiency · Faster incident resolution",
+    "benefit": "Consolidated Azure operations in one console",
+    "savings_usd": 22500,
+    "savings_basis": "~300 hrs/yr saved",
     "source": "github",
     "repo": "azureaiops",
     "where": [
@@ -260,6 +469,19 @@
     "description": "A Streamlit tool that assesses migrating a VMware Horizon VDI estate to AWS End User Computing, despite its repo name it targets AWS rather than Azure. Models per user-type sizing and cost, with Claude-generated migration recommendations.",
     "category": "End-User Computing",
     "hexagon": "Agentic Legacy Modernization",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "AWS SDK (boto3)",
+      "Pandas",
+      "Plotly",
+      "ReportLab (PDF)",
+      "Excel export"
+    ],
+    "drivers": "Modernisation · Operational efficiency",
+    "benefit": "Faster Horizon-to-AWS assessments",
+    "savings_usd": 9000,
+    "savings_basis": "~120 hrs/yr saved",
     "source": "github",
     "repo": "azurevdi",
     "where": [
@@ -272,6 +494,18 @@
     "description": "A Streamlit prototype for a \"self-driving cloud\" platform that jointly optimizes cost, carbon emissions, water usage, performance, and business KPIs. Includes a carbon-intensity dashboard, a Pareto-frontier multi-objective optimizer, and Claude-generated trade-off recommendations.",
     "category": "Energy & Sustainability",
     "hexagon": "AI Strategy & Engineering",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "AWS SDK (boto3)",
+      "Pandas",
+      "scikit-learn",
+      "Plotly"
+    ],
+    "drivers": "Cost optimisation · Sustainability",
+    "benefit": "Joint cost and carbon optimisation of cloud workloads",
+    "savings_usd": 20000,
+    "savings_basis": "2% of a $1M/yr cloud bill",
     "source": "github",
     "repo": "bomoco",
     "where": [
@@ -284,6 +518,20 @@
     "description": "An AI-powered console combining AWS governance, compliance, FinOps and security orchestration, mapping controls to SOC 2, PCI-DSS, HIPAA, GDPR and ISO 27001. Streamlit and React editions with an SCP/OPA policy engine, account lifecycle, EKS and container scanning, and automated Windows/Linux remediation.",
     "category": "Security & Compliance",
     "hexagon": "AI Trust",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "AWS SDK (boto3)",
+      "Firebase",
+      "Docker",
+      "Pandas",
+      "Plotly",
+      "Excel export"
+    ],
+    "drivers": "Risk reduction · Compliance",
+    "benefit": "Unified compliance posture and automated remediation",
+    "savings_usd": 37500,
+    "savings_basis": "~500 hrs/yr saved",
     "source": "github",
     "repo": "compliancenfinops",
     "where": [
@@ -303,6 +551,20 @@
     "description": "Scans containers across EKS, ECS, AKS, ACI, GKE and Cloud Run and tracks findings through prioritised remediation, mapped to CIS and NIST controls. Streamlit front ends using Claude tool-use and an MCP server, plus a backend with exploit-reachability analysis, ML risk scoring and a Kubernetes remediation executor.",
     "category": "Security & Compliance",
     "hexagon": "AI Trust",
+    "stack": [
+      "Streamlit",
+      "FastAPI",
+      "Claude (Anthropic)",
+      "MCP",
+      "AWS SDK (boto3)",
+      "SQLAlchemy",
+      "Docker",
+      "Pandas"
+    ],
+    "drivers": "Risk reduction · Compliance",
+    "benefit": "Prioritised container fixes with less manual triage",
+    "savings_usd": 22500,
+    "savings_basis": "~300 hrs/yr saved",
     "source": "github",
     "repo": "containervul",
     "where": [
@@ -321,6 +583,20 @@
     "description": "A Streamlit contract-management tool with five AI agents covering clause extraction (with OCR), template-based drafting, risk scoring, side-by-side comparison, and a grounded contract Q&A copilot. Built on OpenAI GPT-4o with an obligations/renewals register and portfolio dashboard.",
     "category": "Legal",
     "hexagon": "Process AI",
+    "stack": [
+      "Streamlit",
+      "OpenAI",
+      "Docker",
+      "Pandas",
+      "Plotly",
+      "PDF export",
+      "Word export",
+      "Excel export"
+    ],
+    "drivers": "Productivity · Risk reduction",
+    "benefit": "Faster contract review and drafting",
+    "savings_usd": 30000,
+    "savings_basis": "~400 hrs/yr saved",
     "source": "github",
     "repo": "contractmgmt",
     "where": [
@@ -333,6 +609,18 @@
     "description": "A Streamlit tool that combines AWS RDS cost and performance analysis with real-time on-premise database monitoring for Oracle, MySQL, and SQL Server. Collects live CPU, memory, connection, and query metrics via cx_Oracle/pymysql/pyodbc for cloud-migration comparisons.",
     "category": "Database",
     "hexagon": "Data for AI",
+    "stack": [
+      "Streamlit",
+      "MySQL",
+      "SQL Server (ODBC)",
+      "Oracle",
+      "Pandas",
+      "Plotly"
+    ],
+    "drivers": "Operational efficiency · Reliability",
+    "benefit": "Single view of RDS and on-prem database health",
+    "savings_usd": 11250,
+    "savings_basis": "~150 hrs/yr saved",
     "source": "github",
     "repo": "dbmetrics",
     "where": [
@@ -345,6 +633,20 @@
     "description": "An AI-powered platform that migrates on-premises MySQL, PostgreSQL, SQL Server and Oracle databases to AWS RDS, Aurora and EC2, with compatibility assessment, sizing and TCO. Full-stack TypeScript with Claude auto-remediation across 19 rule modules and a Windows migration agent, plus a single-file Streamlit planning edition.",
     "category": "Database Migration",
     "hexagon": "Agentic Legacy Modernization",
+    "stack": [
+      "Streamlit",
+      "Node.js/Express",
+      "React",
+      "TypeScript",
+      "Claude (Anthropic)",
+      "AWS SDK (JS)",
+      "PostgreSQL",
+      "MySQL"
+    ],
+    "drivers": "Modernisation · Licence cost reduction",
+    "benefit": "Automated database migration and remediation",
+    "savings_usd": 45000,
+    "savings_basis": "~600 hrs/yr saved",
     "source": "github",
     "repo": "dbmigrate",
     "where": [
@@ -358,6 +660,19 @@
     "description": "A Streamlit platform for planning heterogeneous database migrations, parsing and diffing schemas and queries (via ast/difflib) to flag compatibility issues. Produces cost, security, and compliance analysis cards for the proposed target environment.",
     "category": "Database Migration",
     "hexagon": "Agentic Legacy Modernization",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "AWS SDK (boto3)",
+      "Pandas",
+      "Plotly",
+      "ReportLab (PDF)",
+      "Excel export"
+    ],
+    "drivers": "Modernisation · Licence cost reduction",
+    "benefit": "Early detection of schema incompatibilities",
+    "savings_usd": 15000,
+    "savings_basis": "~200 hrs/yr saved",
     "source": "github",
     "repo": "dbmigration",
     "where": [
@@ -370,6 +685,18 @@
     "description": "Ingests VMware vRealize Operations (vROps) metrics to right-size AWS EC2, SQL Server and RDS targets with live pricing. Streamlit with Claude recommendations, exporting executive PDF and Excel reports.",
     "category": "Cloud Migration",
     "hexagon": "Agentic Legacy Modernization",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "AWS SDK (boto3)",
+      "Pandas",
+      "Plotly",
+      "ReportLab (PDF)"
+    ],
+    "drivers": "Modernisation · Cost avoidance",
+    "benefit": "Utilisation-based right-sizing avoids over-provisioning",
+    "savings_usd": 15000,
+    "savings_basis": "~200 hrs/yr saved",
     "source": "github",
     "repo": "ec2workload",
     "where": [
@@ -385,6 +712,13 @@
     "description": "Infrastructure-as-code repository for provisioning and managing an Amazon EKS cluster through GitOps, driven by an AI KubeOps platform. Holds the Terraform and Kubernetes manifests that the automation applies.",
     "category": "Kubernetes",
     "hexagon": "AI Strategy & Engineering",
+    "stack": [
+      "Terraform"
+    ],
+    "drivers": "Operational efficiency · Reliability",
+    "benefit": "Repeatable, auditable cluster provisioning",
+    "savings_usd": 15000,
+    "savings_basis": "~200 hrs/yr saved",
     "source": "github",
     "repo": "eks-gitops-automation",
     "where": [
@@ -397,6 +731,19 @@
     "description": "An enterprise Streamlit console for designing and operating EKS clusters, covering architecture patterns (microservices, ML/GPU, PCI-DSS, HIPAA, multi-tenant SaaS) and CI/CD strategies (GitOps, canary, blue/green). Includes role-based access control with per-role approval tiers for cluster changes.",
     "category": "Kubernetes",
     "hexagon": "AI Strategy & Engineering",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "AWS SDK (boto3)",
+      "Pandas",
+      "Plotly",
+      "ReportLab (PDF)",
+      "Excel export"
+    ],
+    "drivers": "Operational efficiency · Reliability",
+    "benefit": "Faster EKS design and day-2 operations",
+    "savings_usd": 22500,
+    "savings_basis": "~300 hrs/yr saved",
     "source": "github",
     "repo": "eksdesign",
     "where": [
@@ -409,6 +756,20 @@
     "description": "A Google Cloud rebuild of a FinOps analytics platform, using BigQuery as the FOCUS-schema cost warehouse and Google ADK agents on Gemini for natural-language cost Q&A. FastAPI serves a React client, while a mechanical extractor keeps the shared analytics engines in sync with the original Streamlit app.",
     "category": "FinOps",
     "hexagon": "Data for AI",
+    "stack": [
+      "FastAPI",
+      "React",
+      "TypeScript",
+      "Gemini",
+      "Google ADK",
+      "AWS SDK (boto3)",
+      "Azure SDK",
+      "BigQuery"
+    ],
+    "drivers": "Cost optimisation · Accountability",
+    "benefit": "Natural-language cost analysis across clouds",
+    "savings_usd": 30000,
+    "savings_basis": "3% of a $1M/yr cloud bill",
     "source": "github",
     "repo": "finops-gcp",
     "where": [
@@ -422,6 +783,18 @@
     "description": "A deliberately vulnerable sample application (FastAPI backend, React/Nginx frontend, Celery worker) built to demonstrate automated container security remediation. Ships with hardcoded secrets, outdated base images and EOL runtimes for an AI pipeline to detect and fix.",
     "category": "Security & Compliance",
     "hexagon": "AI Trust",
+    "stack": [
+      "FastAPI",
+      "Claude (Anthropic)",
+      "AWS SDK (boto3)",
+      "Redis",
+      "SQLAlchemy",
+      "Docker"
+    ],
+    "drivers": "Skills and sales enablement",
+    "benefit": "Enablement asset for container-security demos",
+    "savings_usd": 3000,
+    "savings_basis": "~40 hrs/yr saved",
     "source": "github",
     "repo": "futuremindsdockerepo",
     "where": [
@@ -434,6 +807,20 @@
     "description": "A multi-agent AI system that adversarially reviews work permits before authorization, checking scope, hazard coverage, hold points, worker competency and simultaneous-operations conflicts against live unit state. Built on Streamlit and LangGraph with Claude/GPT-4o, it verifies every cited safety control against source procedures in code and only ever outputs advisory, human-authorized decisions.",
     "category": "Energy & Utilities",
     "hexagon": "Physical AI",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "OpenAI",
+      "LangGraph",
+      "LangChain",
+      "Pandas",
+      "Plotly",
+      "NetworkX"
+    ],
+    "drivers": "Worker safety · Compliance",
+    "benefit": "Fewer unsafe or incomplete permits reach authorisation",
+    "savings_usd": 22500,
+    "savings_basis": "~300 hrs/yr saved",
     "source": "github",
     "repo": "holdpoint",
     "where": [
@@ -447,6 +834,16 @@
     "description": "Right-sizes AWS EC2 instances for SQL Server workloads from on-premises CPU, RAM, storage and IOPS metrics, across dev, QA, staging and production. Streamlit, favouring cost-optimised AMD families, with region-aware pricing and CSV/Word report export.",
     "category": "Cloud Migration",
     "hexagon": "Agentic Legacy Modernization",
+    "stack": [
+      "Streamlit",
+      "AWS SDK (boto3)",
+      "Pandas",
+      "Word export"
+    ],
+    "drivers": "Modernisation · Cost avoidance",
+    "benefit": "Right-sized SQL Server EC2 targets",
+    "savings_usd": 11250,
+    "savings_basis": "~150 hrs/yr saved",
     "source": "github",
     "repo": "icedba",
     "where": [
@@ -468,6 +865,18 @@
     "description": "A multi-agent app that uses Claude web search to pull live end-of-life and end-of-support dates for 18 OS families and 20 database products. Streamlit, with per-platform AI migration recommendations and scheduled data refreshes.",
     "category": "IT Lifecycle Management",
     "hexagon": "Agentic Legacy Modernization",
+    "stack": [
+      "Streamlit",
+      "OpenAI",
+      "Pandas",
+      "Plotly",
+      "PDF export",
+      "Excel export"
+    ],
+    "drivers": "Risk reduction · Modernisation",
+    "benefit": "Proactive end-of-support upgrade planning",
+    "savings_usd": 9000,
+    "savings_basis": "~120 hrs/yr saved",
     "source": "github",
     "repo": "infylifecycle",
     "where": [
@@ -484,6 +893,15 @@
     "description": "A Streamlit toolkit that uses AI to generate schema documentation, data dictionaries, incident runbooks and change-impact analysis for databases. Also surfaces design-pattern detection, health trend charts and prioritized optimization recommendations.",
     "category": "Database",
     "hexagon": "Data for AI",
+    "stack": [
+      "Streamlit",
+      "Pandas",
+      "Plotly"
+    ],
+    "drivers": "Operational efficiency · Reliability",
+    "benefit": "Automated database documentation and runbooks",
+    "savings_usd": 15000,
+    "savings_basis": "~200 hrs/yr saved",
     "source": "github",
     "repo": "kmdoc",
     "where": [
@@ -496,6 +914,20 @@
     "description": "An agentic Streamlit platform for regulatory change monitoring, obligation analysis, audit preparation and enforcement analytics, built on one architecture that re-targets to different regulated industries via a swappable \"domain pack\". Uses seven LangGraph agents over GPT-4o with RAG-enhanced retrieval across regulators, obligations and case history.",
     "category": "Legal & Regulatory",
     "hexagon": "Process AI",
+    "stack": [
+      "Streamlit",
+      "FastAPI",
+      "Claude (Anthropic)",
+      "OpenAI",
+      "LangGraph",
+      "LangChain",
+      "Pandas",
+      "Plotly"
+    ],
+    "drivers": "Compliance · Productivity",
+    "benefit": "Faster regulatory change and obligation analysis",
+    "savings_usd": 30000,
+    "savings_basis": "~400 hrs/yr saved",
     "source": "github",
     "repo": "legalncompliance",
     "where": [
@@ -509,6 +941,16 @@
     "description": "A Streamlit app that ingests exported Excel workbooks from multiple cloud migration assessment tools and compares their sizing, cost and application-count outputs side by side. Highlights the winning tool per metric and visualizes results with Plotly.",
     "category": "Cloud Migration",
     "hexagon": "Agentic Legacy Modernization",
+    "stack": [
+      "Streamlit",
+      "Pandas",
+      "Plotly",
+      "Excel export"
+    ],
+    "drivers": "Modernisation · Cost avoidance",
+    "benefit": "Reconciles assessment-tool outputs quickly",
+    "savings_usd": 9000,
+    "savings_basis": "~120 hrs/yr saved",
     "source": "github",
     "repo": "migratecomp",
     "where": [
@@ -521,6 +963,19 @@
     "description": "An enterprise Streamlit tool that analyzes Oracle-to-MongoDB migrations, scoring cost, risk and strategy across services and rendering heat maps, timelines and waterfall charts. Generates executive PDF reports via ReportLab alongside CSV/Excel exports.",
     "category": "Database Migration",
     "hexagon": "Agentic Legacy Modernization",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "AWS SDK (boto3)",
+      "Pandas",
+      "Plotly",
+      "ReportLab (PDF)",
+      "Excel export"
+    ],
+    "drivers": "Modernisation · Licence cost reduction",
+    "benefit": "Quantified migration cost and risk before committing",
+    "savings_usd": 11250,
+    "savings_basis": "~150 hrs/yr saved",
     "source": "github",
     "repo": "migratetools",
     "where": [
@@ -533,6 +988,18 @@
     "description": "A Streamlit FinOps platform that normalizes AWS, Azure, GCP and OCI cost data to the FOCUS 1.2 spec, then builds showback/chargeback allocation, spend baselining, a 24-month budget forecast and an optimization backlog on top. An OpenAI + LangGraph agent team answers cost questions against the real underlying data.",
     "category": "FinOps",
     "hexagon": "Data for AI",
+    "stack": [
+      "Streamlit",
+      "OpenAI",
+      "LangGraph",
+      "PostgreSQL",
+      "Pandas",
+      "Plotly"
+    ],
+    "drivers": "Cost optimisation · Accountability",
+    "benefit": "Showback/chargeback and savings across four clouds",
+    "savings_usd": 30000,
+    "savings_basis": "3% of a $1M/yr cloud bill",
     "source": "github",
     "repo": "multicldfinops",
     "where": [
@@ -546,6 +1013,20 @@
     "description": "A Streamlit platform for managing AWS, Azure and GCP infrastructure at scale (built for 640+ AWS accounts), with native cloud CI/CD alongside a dedicated Harness IO integration. Covers account management, networking, Kubernetes clusters and FinOps in one dashboard.",
     "category": "Cloud Infrastructure",
     "hexagon": "AI Strategy & Engineering",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "AWS SDK (boto3)",
+      "Google Cloud SDK",
+      "Firebase",
+      "PostgreSQL",
+      "SQLAlchemy",
+      "Pandas"
+    ],
+    "drivers": "Speed · Governance",
+    "benefit": "Unified multi-cloud operations at scale",
+    "savings_usd": 37500,
+    "savings_basis": "~500 hrs/yr saved",
     "source": "github",
     "repo": "multiclouds",
     "where": [
@@ -558,6 +1039,16 @@
     "description": "A Streamlit dashboard that scans EC2, EKS, ECS and Lambda across AWS regions for misconfigurations such as open ports, IMDSv1 and missing encryption, cross-checked against Inspector and Security Hub findings. AWS Bedrock (Claude/Titan) generates remediation plans, with one-click automated fixes for common issues.",
     "category": "Security & Compliance",
     "hexagon": "AI Trust",
+    "stack": [
+      "Streamlit",
+      "AWS SDK (boto3)",
+      "Pandas",
+      "Plotly"
+    ],
+    "drivers": "Risk reduction · Compliance",
+    "benefit": "Automated misconfiguration detection",
+    "savings_usd": 15000,
+    "savings_basis": "~200 hrs/yr saved",
     "source": "github",
     "repo": "multicloudsecurity",
     "where": [
@@ -570,6 +1061,20 @@
     "description": "A Streamlit tool that uses Claude to auto-generate professional schema documentation across multiple database engines. Turns a raw schema into structured, exportable documentation without manual write-up.",
     "category": "Database",
     "hexagon": "Data for AI",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "PostgreSQL",
+      "SQL Server",
+      "SQL Server (ODBC)",
+      "SQLAlchemy",
+      "Pandas",
+      "Plotly"
+    ],
+    "drivers": "Operational efficiency · Reliability",
+    "benefit": "Automated schema documentation",
+    "savings_usd": 7500,
+    "savings_basis": "~100 hrs/yr saved",
     "source": "github",
     "repo": "multidbschemadoc",
     "where": [
@@ -582,6 +1087,20 @@
     "description": "A Streamlit app that uses Claude to translate SQL and query syntax between different database engines. Aimed at teams migrating queries across heterogeneous database platforms.",
     "category": "Database",
     "hexagon": "Data for AI",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "PostgreSQL",
+      "SQL Server (ODBC)",
+      "Oracle",
+      "SQLAlchemy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "drivers": "Operational efficiency · Reliability",
+    "benefit": "Faster cross-engine query conversion",
+    "savings_usd": 9000,
+    "savings_basis": "~120 hrs/yr saved",
     "source": "github",
     "repo": "multiquerydb",
     "where": [
@@ -594,6 +1113,19 @@
     "description": "Plans AWS database and file migrations, sizing target infrastructure and modelling the network path down to real achievable throughput (NIC, OS overhead, DataSync/DMS agent scaling). Streamlit and Claude, with FSx destination comparison, Firebase login and PDF/Excel executive reports.",
     "category": "Cloud Migration",
     "hexagon": "Agentic Legacy Modernization",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "AWS SDK (boto3)",
+      "Pandas",
+      "Plotly",
+      "ReportLab (PDF)",
+      "Excel export"
+    ],
+    "drivers": "Modernisation · Cost avoidance",
+    "benefit": "Realistic transfer timelines and target sizing",
+    "savings_usd": 15000,
+    "savings_basis": "~200 hrs/yr saved",
     "source": "github",
     "repo": "networkdx",
     "where": [
@@ -611,6 +1143,19 @@
     "description": "Plans AWS migrations from a single heterogeneous database move up to multi-service programmes across business units and waves, weighing network throughput, transfer service (DataSync, DMS, Snowball), data residency and SLAs. Streamlit with live boto3 pricing and Claude-written executive summaries and roadmaps.",
     "category": "Cloud Migration",
     "hexagon": "Agentic Legacy Modernization",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "AWS SDK (boto3)",
+      "Pandas",
+      "Plotly",
+      "ReportLab (PDF)",
+      "Excel export"
+    ],
+    "drivers": "Modernisation · Cost avoidance",
+    "benefit": "Faster migration wave planning",
+    "savings_usd": 18750,
+    "savings_basis": "~250 hrs/yr saved",
     "source": "github",
     "repo": "networkpatterns",
     "where": [
@@ -626,6 +1171,17 @@
     "description": "A Streamlit decision-support simulator for moving an on-premises VMware estate to Microsoft Azure. It prices workloads from the live Azure Retail Prices API, models Azure Migrate's real service limits, runs Monte Carlo risk analysis, and scores 15 alternative target platforms.",
     "category": "Cloud Migration",
     "hexagon": "Agentic Legacy Modernization",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "Pandas",
+      "Plotly",
+      "Excel export"
+    ],
+    "drivers": "Modernisation · Cost avoidance",
+    "benefit": "Faster VMware-to-Azure business cases",
+    "savings_usd": 12000,
+    "savings_basis": "~160 hrs/yr saved",
     "source": "github",
     "repo": "onpremtocloud",
     "where": [
@@ -638,6 +1194,13 @@
     "description": "A library of pre-approved Terraform modules, CI/CD pipeline templates, and OPA policies for governing cloud migrations across AWS, Azure and GCP. A companion migration accelerator uses it to map workloads to compliant infrastructure, validate policy-as-code, and trigger native CI/CD pipelines.",
     "category": "Cloud Migration",
     "hexagon": "Agentic Legacy Modernization",
+    "stack": [
+      "Terraform"
+    ],
+    "drivers": "Governance · Modernisation",
+    "benefit": "Reusable, pre-approved migration patterns",
+    "savings_usd": 18750,
+    "savings_basis": "~250 hrs/yr saved",
     "source": "github",
     "repo": "orgcontrols",
     "where": [
@@ -650,6 +1213,18 @@
     "description": "A Streamlit app for tracking team productivity, activities and goals across multiple teams. Firebase/Firestore handles auth and storage, with dashboards, status badges and goal-attainment metrics built on Plotly.",
     "category": "Workplace Productivity",
     "hexagon": "Process AI",
+    "stack": [
+      "Streamlit",
+      "Google Cloud SDK",
+      "Firebase",
+      "Pandas",
+      "Plotly",
+      "Excel export"
+    ],
+    "drivers": "Productivity · Visibility",
+    "benefit": "Less manual status reporting",
+    "savings_usd": 11250,
+    "savings_basis": "~150 hrs/yr saved",
     "source": "github",
     "repo": "prodtracker",
     "where": [
@@ -662,6 +1237,19 @@
     "description": "A Streamlit platform for planning enterprise cloud migrations that pairs rightsizing calculations with a live Claude AI analyst for strategy recommendations. It can ingest VMware vRealize Operations (vROps) utilization data and falls back to rule-based analysis when no AI key is set.",
     "category": "Cloud Migration",
     "hexagon": "Agentic Legacy Modernization",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "AWS SDK (boto3)",
+      "Pandas",
+      "Plotly",
+      "ReportLab (PDF)",
+      "Excel export"
+    ],
+    "drivers": "Modernisation · Cost avoidance",
+    "benefit": "Faster migration strategy and rightsizing",
+    "savings_usd": 15000,
+    "savings_basis": "~200 hrs/yr saved",
     "source": "github",
     "repo": "rdsaiops",
     "where": [
@@ -674,6 +1262,19 @@
     "description": "Sizes and prices AWS RDS and Aurora migrations from on-premises workloads, modelling topologies from Single-AZ to Aurora Global with reader/writer recommendations and monthly costs. Streamlit with live boto3 pricing and Claude analysis; one edition ingests VMware vROps exports, another is login-gated with PDF/Excel reports.",
     "category": "Database Migration",
     "hexagon": "Agentic Legacy Modernization",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "AWS SDK (boto3)",
+      "Pandas",
+      "Plotly",
+      "ReportLab (PDF)",
+      "Excel export"
+    ],
+    "drivers": "Modernisation · Licence cost reduction",
+    "benefit": "Right-sized RDS/Aurora with live pricing",
+    "savings_usd": 11250,
+    "savings_basis": "~150 hrs/yr saved",
     "source": "github",
     "repo": "rdsaws",
     "where": [
@@ -691,6 +1292,20 @@
     "description": "A Streamlit tool for building a multi-year staffing and resourcing plan for a cloud operations team. It includes enterprise session/audit management scaffolding and dashboards for headcount, cost and workload trends.",
     "category": "Workforce Planning",
     "hexagon": "Process AI",
+    "stack": [
+      "Streamlit",
+      "AWS SDK (boto3)",
+      "PostgreSQL",
+      "MongoDB",
+      "SQLAlchemy",
+      "Pandas",
+      "scikit-learn",
+      "Plotly"
+    ],
+    "drivers": "Planning accuracy",
+    "benefit": "Faster, consistent staffing plans",
+    "savings_usd": 4500,
+    "savings_basis": "~60 hrs/yr saved",
     "source": "github",
     "repo": "resourceplan",
     "where": [
@@ -703,6 +1318,17 @@
     "description": "A Streamlit app that scores e-commerce return requests for fraud risk and routes flagged cases through an approval workflow. It uses Claude for risk analysis, JWT/bcrypt authentication, SQLite storage, and email alerts for high-risk returns.",
     "category": "Retail & E-commerce",
     "hexagon": "Process AI",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "Pandas",
+      "Plotly",
+      "Excel export"
+    ],
+    "drivers": "Fraud-loss reduction",
+    "benefit": "Fewer fraudulent returns reach approval",
+    "savings_usd": 22500,
+    "savings_basis": "~300 hrs/yr saved",
     "source": "github",
     "repo": "returnguardai",
     "where": [
@@ -715,6 +1341,18 @@
     "description": "A Streamlit prototype of an AI-infused SAP HANA monitoring solution that consolidates KPIs from multiple sources into threshold-based RAG status and a chat copilot. It pairs Claude for reasoning with OpenAI embeddings for retrieval, plus an agentic remediation action center and an Agentic-AI-vs-FTE ROI model.",
     "category": "SAP",
     "hexagon": "Data for AI",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "OpenAI",
+      "Pandas",
+      "Plotly",
+      "Excel export"
+    ],
+    "drivers": "Reliability · Uptime",
+    "benefit": "Earlier detection of SAP HANA issues",
+    "savings_usd": 15000,
+    "savings_basis": "~200 hrs/yr saved",
     "source": "github",
     "repo": "saphanamonitor",
     "where": [
@@ -728,6 +1366,16 @@
     "description": "A Streamlit platform for planning SQL Server compute scaling on AWS, weighing bring-your-own-license (BYOL) costs against on-demand licensing. It layers in Datadog-style operational metrics and optional AWS pricing via boto3 to size infrastructure and staffing.",
     "category": "Database",
     "hexagon": "Data for AI",
+    "stack": [
+      "Streamlit",
+      "AWS SDK (boto3)",
+      "Pandas",
+      "Plotly"
+    ],
+    "drivers": "Licence cost reduction",
+    "benefit": "Better SQL Server licensing decisions",
+    "savings_usd": 7500,
+    "savings_basis": "~100 hrs/yr saved",
     "source": "github",
     "repo": "sqlaoplanner",
     "where": [
@@ -740,6 +1388,20 @@
     "description": "A Streamlit dashboard that tracks SQL Server health from AWS CloudWatch Agent metrics, including buffer cache hit ratio, page life expectancy and batch requests. Each metric carries thresholds and remediation guidance, with an executive dashboard and an auto-remediation tab.",
     "category": "Database",
     "hexagon": "Data for AI",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "AWS SDK (boto3)",
+      "SQL Server (ODBC)",
+      "Pandas",
+      "scikit-learn",
+      "Plotly",
+      "ReportLab (PDF)"
+    ],
+    "drivers": "Operational efficiency · Reliability",
+    "benefit": "Proactive SQL Server health alerts",
+    "savings_usd": 9000,
+    "savings_basis": "~120 hrs/yr saved",
     "source": "github",
     "repo": "sqlmon",
     "where": [
@@ -752,6 +1414,19 @@
     "description": "Turns natural-language requests into optimised SQL, explains query rewrites, and runs health checks against live SQL Server instances. Streamlit and Claude, connecting via pymssql/SQLAlchemy for maintenance recommendations.",
     "category": "Database",
     "hexagon": "Data for AI",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "SQL Server",
+      "SQL Server (ODBC)",
+      "SQLAlchemy",
+      "Pandas",
+      "Plotly"
+    ],
+    "drivers": "Operational efficiency · Reliability",
+    "benefit": "Faster query tuning and health checks",
+    "savings_usd": 11250,
+    "savings_basis": "~150 hrs/yr saved",
     "source": "github",
     "repo": "sqlservermaintain",
     "where": [
@@ -767,6 +1442,15 @@
     "description": "A FastAPI backend for tracking recurring subscriptions, payments and savings for end users. It uses Claude to auto-detect subscriptions and bills, Stripe for payments, and exposes REST endpoints for users, subscriptions, negotiations, price alerts and savings reports.",
     "category": "Consumer Finance",
     "hexagon": "Process AI",
+    "stack": [
+      "FastAPI",
+      "Claude (Anthropic)",
+      "PostgreSQL"
+    ],
+    "drivers": "Cost savings for end users",
+    "benefit": "Automated subscription and bill tracking",
+    "savings_usd": 3750,
+    "savings_basis": "~50 hrs/yr saved",
     "source": "github",
     "repo": "subscription-manager-backend",
     "where": [
@@ -779,6 +1463,18 @@
     "description": "An enterprise platform for AWS cloud governance, compliance, FinOps and security across the account lifecycle, with 21 modules. Streamlit, combining policy-as-code, SCP management, AI forecasting and batch remediation, with a demo mode that simulates metrics when AWS access isn't configured.",
     "category": "Security & Compliance",
     "hexagon": "AI Trust",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "AWS SDK (boto3)",
+      "SQLAlchemy",
+      "Pandas",
+      "Plotly"
+    ],
+    "drivers": "Risk reduction · Compliance",
+    "benefit": "Automated governance and batch remediation",
+    "savings_usd": 30000,
+    "savings_basis": "~400 hrs/yr saved",
     "source": "github",
     "repo": "techguard",
     "where": [
@@ -794,6 +1490,16 @@
     "description": "A Streamlit app that scores telecom customers on churn risk and explains why, trained on the public Telco Customer Churn dataset. A tuned Random Forest model (84.5% ROC-AUC) drives per-customer scoring, with logistic-regression and decision-tree baselines for comparison.",
     "category": "Telecom",
     "hexagon": "Data for AI",
+    "stack": [
+      "Streamlit",
+      "Pandas",
+      "scikit-learn",
+      "Plotly"
+    ],
+    "drivers": "Revenue retention",
+    "benefit": "Retention effort focused on at-risk customers",
+    "savings_usd": 11250,
+    "savings_basis": "~150 hrs/yr saved",
     "source": "github",
     "repo": "telecomchurn",
     "where": [
@@ -806,6 +1512,15 @@
     "description": "A Streamlit tool that searches GitHub for real-world Terraform modules and patterns across official and community repositories. It ranks results by stars and relevance, fetches file contents via the GitHub API, and flags official-provider modules to speed up discovery.",
     "category": "Infrastructure as Code",
     "hexagon": "AI Strategy & Engineering",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "Plotly"
+    ],
+    "drivers": "Developer productivity · Standardisation",
+    "benefit": "Reuses proven Terraform patterns",
+    "savings_usd": 7500,
+    "savings_basis": "~100 hrs/yr saved",
     "source": "github",
     "repo": "terraform-code-generator",
     "where": [
@@ -818,6 +1533,14 @@
     "description": "A Streamlit tool that uses Claude to convert Terraform HCL into AWS CDK code in TypeScript or other languages. It favors L2/L3 constructs, adds explanatory comments, and can produce a detailed writeup of what changed and why.",
     "category": "Infrastructure as Code",
     "hexagon": "Agentic Legacy Modernization",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)"
+    ],
+    "drivers": "Developer productivity · Standardisation",
+    "benefit": "Faster IaC conversion to CDK",
+    "savings_usd": 11250,
+    "savings_basis": "~150 hrs/yr saved",
     "source": "github",
     "repo": "terraformtocdk",
     "where": [
@@ -830,6 +1553,17 @@
     "description": "An interactive demo of an enterprise AI-reliability platform that detects LLM hallucinations before they reach users. Streamlit, walking through 13 scenarios across 8 industries, detection techniques, EU AI Act / NIST AI RMF / SOC 2 mapping and an ROI calculator.",
     "category": "AI Governance",
     "hexagon": "AI Trust",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "OpenAI",
+      "Pandas",
+      "Plotly"
+    ],
+    "drivers": "AI risk reduction · Trust",
+    "benefit": "Catches LLM hallucinations before they reach users",
+    "savings_usd": 15000,
+    "savings_basis": "~200 hrs/yr saved",
     "source": "github",
     "repo": "trustlayer-ai",
     "where": [
@@ -845,6 +1579,17 @@
     "description": "Scans Windows Servers across multiple AWS accounts and regions, patches them via SSM, and tracks ServiceNow tickets with human-in-the-loop approval. Agentic Streamlit app with Claude recommending fixes mapped to NIST and CIS controls, plus a severity-coded tracking console.",
     "category": "Security & Compliance",
     "hexagon": "AI Trust",
+    "stack": [
+      "Streamlit",
+      "Claude (Anthropic)",
+      "OpenAI",
+      "AWS SDK (boto3)",
+      "Pandas"
+    ],
+    "drivers": "Risk reduction · Compliance",
+    "benefit": "Automated, approval-gated Windows patching",
+    "savings_usd": 30000,
+    "savings_basis": "~400 hrs/yr saved",
     "source": "github",
     "repo": "windowsvul",
     "where": [
@@ -860,6 +1605,20 @@
     "description": "An AI-driven cloud migration accelerator that assesses, plans, and executes application migrations to AWS and Azure through Day-0 discovery, Day-1 build, and Day-2 operations workflows. A multi-agent backend handles discovery, complexity scoring, and target-architecture generation behind a React frontend, with execution history in Redis and Aurora MySQL.",
     "category": "Cloud Migration",
     "hexagon": "Agentic Legacy Modernization",
+    "stack": [
+      "FastAPI",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Claude (Anthropic)",
+      "OpenAI",
+      "AWS SDK (boto3)",
+      "Azure SDK"
+    ],
+    "drivers": "Modernisation · Speed to cloud",
+    "benefit": "End-to-end application migration acceleration",
+    "savings_usd": 75000,
+    "savings_basis": "~1,000 hrs/yr saved",
     "source": "github",
     "repo": "workloadmigrate",
     "where": [
@@ -874,6 +1633,20 @@
     "description": "A four-agent AI team (PM, Developer, Tester, End User) that turns a plain-language product idea into working, previewable software end to end. Each build runs in a sandboxed environment with a live preview server, streamed progress, and a downloadable project package.",
     "category": "Software Engineering",
     "hexagon": "AI Strategy & Engineering",
+    "stack": [
+      "FastAPI",
+      "React",
+      "TypeScript",
+      "Claude (Anthropic)",
+      "OpenAI",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "drivers": "Speed to market",
+    "benefit": "Idea to working prototype faster",
+    "savings_usd": 22500,
+    "savings_basis": "~300 hrs/yr saved",
     "source": "local",
     "repo": null,
     "where": [
@@ -887,6 +1660,18 @@
     "description": "A FinOps platform where natural-language AI agents investigate real AWS cost data across multiple accounts using verifiable, read-only tool calls rather than guesswork. Built with React, FastAPI, and LangGraph, it supports multi-account cost fan-out, commitment pooling, and signed change-plan artifacts for a CI/CD pipeline to apply.",
     "category": "FinOps",
     "hexagon": "Data for AI",
+    "stack": [
+      "FastAPI",
+      "React",
+      "TypeScript",
+      "Claude (Anthropic)",
+      "LangGraph",
+      "AWS SDK (boto3)"
+    ],
+    "drivers": "Cost optimisation · Accountability",
+    "benefit": "Verified cost findings across accounts",
+    "savings_usd": 30000,
+    "savings_basis": "3% of a $1M/yr cloud bill",
     "source": "local",
     "repo": null,
     "where": [
@@ -900,6 +1685,20 @@
     "description": "A LangGraph-based operations agent that investigates AWS incidents and answers operational questions in natural language, backed by a choice of LLM providers. It ships with a mock mode of pre-built scenarios and an executive BI dashboard for demonstrating outcomes without touching live infrastructure.",
     "category": "Cloud Operations",
     "hexagon": "AI Strategy & Engineering",
+    "stack": [
+      "FastAPI",
+      "React",
+      "TypeScript",
+      "Claude (Anthropic)",
+      "OpenAI",
+      "LangGraph",
+      "AWS SDK (boto3)",
+      "Azure SDK"
+    ],
+    "drivers": "Operational efficiency · Faster incident resolution",
+    "benefit": "Faster AWS incident investigation",
+    "savings_usd": 30000,
+    "savings_basis": "~400 hrs/yr saved",
     "source": "local",
     "repo": null,
     "where": [
@@ -913,6 +1712,20 @@
     "description": "An enterprise FinOps dashboard for cost optimization across 100+ AWS accounts, with Holt-Winters spend forecasting and five autonomous agents for cost, anomaly, savings, tagging, and forecasting tasks. Built with React and FastAPI, with an optional Claude-powered agent layer over real or mocked AWS Cost Explorer data.",
     "category": "FinOps",
     "hexagon": "Data for AI",
+    "stack": [
+      "FastAPI",
+      "React",
+      "Claude (Anthropic)",
+      "AWS SDK (boto3)",
+      "Docker",
+      "Pandas",
+      "scikit-learn",
+      "Recharts"
+    ],
+    "drivers": "Cost optimisation · Accountability",
+    "benefit": "Forecasting and savings across 100+ accounts",
+    "savings_usd": 30000,
+    "savings_basis": "3% of a $1M/yr cloud bill",
     "source": "local",
     "repo": null,
     "where": [
@@ -925,6 +1738,13 @@
     "description": "A closed-loop autonomous debugging tool that runs Playwright against a live app, pulls the implicated source over SSH, and asks Claude to draft and apply a patch, then redeploys and re-verifies the fix. It iterates up to three times per run and supports a dry-run preview mode.",
     "category": "Software Engineering",
     "hexagon": "AI Strategy & Engineering",
+    "stack": [
+      "Claude (Anthropic)"
+    ],
+    "drivers": "Developer productivity · Quality",
+    "benefit": "Automated fix-and-verify loop for defects",
+    "savings_usd": 15000,
+    "savings_basis": "~200 hrs/yr saved",
     "source": "local",
     "repo": null,
     "where": [
@@ -937,6 +1757,20 @@
     "description": "An agentic AI platform for AWS vulnerability management that combines automated scanning with human-in-the-loop approval gated by ML confidence scoring. It executes real Linux and Windows patching and reboot orchestration via SSM and a CI/CD delegate, with a full remediation audit trail and ServiceNow integration.",
     "category": "Security & Compliance",
     "hexagon": "AI Trust",
+    "stack": [
+      "FastAPI",
+      "React",
+      "TypeScript",
+      "Claude (Anthropic)",
+      "OpenAI",
+      "LangGraph",
+      "LangChain",
+      "AWS SDK (boto3)"
+    ],
+    "drivers": "Risk reduction · Compliance",
+    "benefit": "Automated vulnerability remediation with approvals",
+    "savings_usd": 37500,
+    "savings_basis": "~500 hrs/yr saved",
     "source": "local",
     "repo": null,
     "where": [
@@ -950,6 +1784,18 @@
     "description": "A conversational, AI-guided self-service platform for provisioning governed cloud infrastructure across AWS and Azure from natural language requests. It generates and validates real Terraform with a self-healing repair loop, enforces policy-as-code guardrails, and integrates with ServiceNow for change approval and CMDB updates.",
     "category": "Cloud Infrastructure",
     "hexagon": "AI Strategy & Engineering",
+    "stack": [
+      "FastAPI",
+      "React",
+      "Claude (Anthropic)",
+      "Docker",
+      "ReportLab (PDF)",
+      "Word export"
+    ],
+    "drivers": "Speed · Governance",
+    "benefit": "Self-service, governed infrastructure provisioning",
+    "savings_usd": 37500,
+    "savings_basis": "~500 hrs/yr saved",
     "source": "local",
     "repo": null,
     "where": [
@@ -963,6 +1809,17 @@
     "description": "A persona-aware security add-on for an internal delivery and BI analytics dashboard, surfacing account MFA posture and risk alongside existing operational views. It ships as a standalone page plus an additive backend enhancement so it deploys without altering the existing site.",
     "category": "Security & Compliance",
     "hexagon": "AI Trust",
+    "stack": [
+      "Amazon Cognito",
+      "AWS Lambda@Edge",
+      "Amazon API Gateway",
+      "Amazon CloudFront",
+      "HTML/JavaScript"
+    ],
+    "drivers": "Risk reduction · Compliance",
+    "benefit": "MFA and risk visibility for dashboard users",
+    "savings_usd": 4500,
+    "savings_basis": "~60 hrs/yr saved",
     "source": "local",
     "repo": null,
     "where": [
@@ -976,6 +1833,19 @@
     "description": "A LangGraph-based agent that parses database performance incidents, classifies likely root cause, and produces a remediation runbook. Built with a FastAPI backend and a React frontend, offering chat-driven triage and dashboards for tracking incidents end to end.",
     "category": "Database",
     "hexagon": "Data for AI",
+    "stack": [
+      "FastAPI",
+      "React",
+      "OpenAI",
+      "LangGraph",
+      "PostgreSQL",
+      "MySQL",
+      "Docker"
+    ],
+    "drivers": "Operational efficiency · Reliability",
+    "benefit": "Faster database incident root cause",
+    "savings_usd": 18750,
+    "savings_basis": "~250 hrs/yr saved",
     "source": "local",
     "repo": null,
     "where": [
@@ -989,6 +1859,20 @@
     "description": "A streaming AI avatar application that answers questions using retrieval-augmented generation grounded in ingested documents. It combines a live-avatar video stream with a FastAPI backend, Claude for reasoning, and a vector database as the knowledge store.",
     "category": "Conversational AI",
     "hexagon": "AI Strategy & Engineering",
+    "stack": [
+      "FastAPI",
+      "React",
+      "OpenAI",
+      "LangGraph",
+      "ChromaDB",
+      "HeyGen avatar",
+      "Docker",
+      "Word export"
+    ],
+    "drivers": "Knowledge access · Productivity",
+    "benefit": "Always-on expert Q&A from company documents",
+    "savings_usd": 11250,
+    "savings_basis": "~150 hrs/yr saved",
     "source": "local",
     "repo": null,
     "where": [
@@ -1001,6 +1885,15 @@
     "description": "A legal-document generation tool that produces a mutual NDA from a guided form with a live document preview. It pairs a Next.js NDA creator with a growing template library covering DPAs, BAAs, SLAs, and partnership and pilot agreements.",
     "category": "Legal",
     "hexagon": "Process AI",
+    "stack": [
+      "Next.js",
+      "React",
+      "TypeScript"
+    ],
+    "drivers": "Productivity · Risk reduction",
+    "benefit": "Faster NDA and agreement drafting",
+    "savings_usd": 11250,
+    "savings_basis": "~150 hrs/yr saved",
     "source": "local",
     "repo": null,
     "where": [
@@ -1013,6 +1906,20 @@
     "description": "A procurement intelligence platform that analyzes a large public government contracting dataset to surface vendor concentration risk, competition gaps, and supplier lock-in. It pairs a React/Recharts frontend with a FastAPI/Pandas backend and an AI analyst built on Claude with a fallback model.",
     "category": "Public Sector",
     "hexagon": "Data for AI",
+    "stack": [
+      "FastAPI",
+      "React",
+      "Claude (Anthropic)",
+      "OpenAI",
+      "PostgreSQL",
+      "Docker",
+      "Pandas",
+      "Recharts"
+    ],
+    "drivers": "Procurement risk · Transparency",
+    "benefit": "Faster procurement and vendor-risk analysis",
+    "savings_usd": 15000,
+    "savings_basis": "~200 hrs/yr saved",
     "source": "local",
     "repo": null,
     "where": [
@@ -1026,6 +1933,13 @@
     "description": "A minimal teaching example of the Model Context Protocol, exposing a sandboxed filesystem server with four tools for listing, reading, writing, and searching files. Includes a companion training deck and sample data for a guided walkthrough.",
     "category": "AI Engineering",
     "hexagon": "AI Strategy & Engineering",
+    "stack": [
+      "MCP"
+    ],
+    "drivers": "Skills enablement",
+    "benefit": "Faster MCP enablement for teams",
+    "savings_usd": 3000,
+    "savings_basis": "~40 hrs/yr saved",
     "source": "local",
     "repo": null,
     "where": [
@@ -1038,6 +1952,16 @@
     "description": "A network diagnostics tool that maps a transit gateway estate across accounts, follows a packet through the gateway and its reply back, and flags where the two paths disagree. Detects asymmetric routes, one-way paths, blackholes, missing routes, and stateless ACL or security-group traps, with both cloud-hosted and air-gapped offline deployments.",
     "category": "Networking",
     "hexagon": "AI Strategy & Engineering",
+    "stack": [
+      "FastAPI",
+      "React",
+      "TypeScript",
+      "AWS SDK (boto3)"
+    ],
+    "drivers": "Faster troubleshooting · Reliability",
+    "benefit": "Faster network path troubleshooting",
+    "savings_usd": 15000,
+    "savings_basis": "~200 hrs/yr saved",
     "source": "local",
     "repo": null,
     "where": [
@@ -1051,6 +1975,20 @@
     "description": "A modular migration governance hub covering discovery, governance, testing, and Day-2 operations for large-scale AWS transformation programs, with a control tower for tracking agent-driven tasks. Built with FastAPI and Next.js, and integrates directly with a companion cloud migration platform.",
     "category": "Cloud Migration",
     "hexagon": "Agentic Legacy Modernization",
+    "stack": [
+      "FastAPI",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Claude (Anthropic)",
+      "AWS SDK (boto3)",
+      "PostgreSQL",
+      "Redis"
+    ],
+    "drivers": "Modernisation · Governance",
+    "benefit": "Centralised migration governance and tracking",
+    "savings_usd": 30000,
+    "savings_basis": "~400 hrs/yr saved",
     "source": "local",
     "repo": null,
     "where": [
@@ -1064,6 +2002,20 @@
     "description": "Continuously scans multi-project Google Cloud estates for security posture gaps across five defence layers and can execute guarded remediation actions. Built on FastAPI and a React/TypeScript console, with Vertex AI-backed layer specialists, an evidence ledger, and tiered auto-execution.",
     "category": "Security & Compliance",
     "hexagon": "AI Trust",
+    "stack": [
+      "FastAPI",
+      "React",
+      "TypeScript",
+      "Gemini",
+      "Vertex AI",
+      "PostgreSQL",
+      "Redis",
+      "SQLAlchemy"
+    ],
+    "drivers": "Risk reduction · Compliance",
+    "benefit": "Automated GCP posture remediation",
+    "savings_usd": 30000,
+    "savings_basis": "~400 hrs/yr saved",
     "source": "aws",
     "repo": null,
     "where": [
@@ -1076,6 +2028,20 @@
     "description": "Scans source repositories to discover, score, and prioritize technical debt, then proposes AI-assisted remediation plans. FastAPI/PostgreSQL backend with static-analysis tooling (radon, pylint, bandit, lizard) plus an LLM layer, a React dashboard, and Prometheus/Grafana monitoring.",
     "category": "Software Engineering",
     "hexagon": "Agentic Legacy Modernization",
+    "stack": [
+      "FastAPI",
+      "React",
+      "Claude (Anthropic)",
+      "OpenAI",
+      "PostgreSQL",
+      "Redis",
+      "Celery",
+      "SQLAlchemy"
+    ],
+    "drivers": "Developer productivity · Quality",
+    "benefit": "Prioritised technical-debt remediation",
+    "savings_usd": 22500,
+    "savings_basis": "~300 hrs/yr saved",
     "source": "aws",
     "repo": null,
     "where": [
@@ -1088,6 +2054,19 @@
     "description": "A forward- and reverse-engineering platform that turns plain-language requirements into design specs and code, or extracts specs and diagrams back out of an existing codebase. FastAPI backend calling Claude at temperature 0 for deterministic output, with a React/Tailwind frontend and drift detection between spec and code.",
     "category": "Software Engineering",
     "hexagon": "Agentic Legacy Modernization",
+    "stack": [
+      "FastAPI",
+      "React",
+      "Claude (Anthropic)",
+      "OpenAI",
+      "SQLAlchemy",
+      "Docker",
+      "Recharts"
+    ],
+    "drivers": "Developer productivity · Quality",
+    "benefit": "Specs and code from requirements; specs recovered from legacy code",
+    "savings_usd": 22500,
+    "savings_basis": "~300 hrs/yr saved",
     "source": "aws",
     "repo": null,
     "where": [
@@ -1100,6 +2079,20 @@
     "description": "Converts SQL and BTEQ scripts from Teradata dialect to BigQuery, with schema/metadata assessment, validation, and batch conversion of full workloads. Claude-powered agentic conversion behind FastAPI, JWT auth and PostgreSQL persistence, Celery for distributed batch jobs, and an MCP-based Teradata connector.",
     "category": "Data Warehouse Migration",
     "hexagon": "Agentic Legacy Modernization",
+    "stack": [
+      "FastAPI",
+      "React",
+      "Claude (Anthropic)",
+      "BigQuery",
+      "PostgreSQL",
+      "Redis",
+      "Celery",
+      "SQLAlchemy"
+    ],
+    "drivers": "Modernisation · Licence cost reduction",
+    "benefit": "Automated Teradata-to-BigQuery code conversion",
+    "savings_usd": 45000,
+    "savings_basis": "~600 hrs/yr saved",
     "source": "aws",
     "repo": null,
     "where": [
@@ -1112,6 +2105,15 @@
     "description": "A single-pane-of-glass operations platform for Kubernetes fleets spanning EKS and self-managed clusters, covering auto-discovery, upgrade risk analysis, TLS certificate monitoring, storage observability, GitOps deployments, and ITSM-style change requests. React/TypeScript frontend over a FastAPI backend with an AI planning layer and JWT-based multi-tenant RBAC.",
     "category": "Kubernetes",
     "hexagon": "AI Strategy & Engineering",
+    "stack": [
+      "FastAPI",
+      "React",
+      "TypeScript"
+    ],
+    "drivers": "Operational efficiency · Reliability",
+    "benefit": "Fleet-wide Kubernetes operations and upgrade risk",
+    "savings_usd": 37500,
+    "savings_basis": "~500 hrs/yr saved",
     "source": "aws",
     "repo": null,
     "where": [
