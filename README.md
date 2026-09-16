@@ -26,6 +26,36 @@ The page opens on the ECHO AI Lab – Calgary login. Accounts are kept in the ap
 
 Add a user by hashing their password: `python -c "import auth; print(auth.hash_password('their-password'))"`. The login protects the page, not the repo: `projects.json` is readable by anyone who can see this repository.
 
+## MCP server
+
+`mcp/server.py` exposes these applications to Claude over MCP (stdio, runs locally):
+
+| Tool | What it does |
+|---|---|
+| `list_apps` | the catalogue, filtered by pillar, category or free text |
+| `get_app` | one application's full entry plus its Streamlit Cloud URL |
+| `check_app` | is it running, asleep, private or not deployed |
+| `wake_app` | clicks "Yes, get this app back up!" and waits for the app |
+| `screenshot_app` | returns a picture of the live app |
+| `browse_app` | fills fields and clicks buttons, then reports what the page says |
+| `discover_apps` | probes `https://<repo>.streamlit.app` for every catalogue entry and caches what it finds in `mcp/apps.json` |
+
+Setup:
+
+```bash
+pip install -r mcp/requirements.txt
+python -m playwright install chromium
+claude mcp add echo-apps -s user -- python /absolute/path/to/mcp/server.py
+```
+
+For apps behind a login, add `mcp/credentials.json` (gitignored) so screenshots and browsing can sign in:
+
+```json
+{ "echoaiprojects": { "username": "echo-admin", "password": "..." } }
+```
+
+Streamlit Community Cloud has no public API, so app URLs are guessed from repo names and verified, and an app's real state (running, asleep, private) is read from the page in a headless browser — HTTP alone can't tell those apart.
+
 ## Updating the list
 
 All entries are in `projects.json` (`sno`, `title`, `description`, `source` = `github` | `local` | `aws`, `repo`, `where`). Edit that file and push; the page reloads from it.

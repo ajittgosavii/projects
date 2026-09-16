@@ -1,0 +1,4 @@
+# Dependencies for the MCP server only — the Streamlit page uses the root requirements.txt.
+mcp>=1.27
+httpx>=0.28
+playwright>=1.49

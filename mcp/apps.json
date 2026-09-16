@@ -1,0 +1,387 @@
+{
+ "agenticaivul": {
+  "checked": "2026-09-15 18:01",
+  "repo": "agenticaivul",
+  "state": "asleep",
+  "title": "Advanced Multi-Agent Security System",
+  "url": "https://agenticaivul.streamlit.app"
+ },
+ "aicodereviewer": {
+  "checked": "2026-09-15 18:01",
+  "repo": "aidemo-frist",
+  "state": "asleep",
+  "title": "AI Code Reviewer",
+  "url": "https://aicodereviewer.streamlit.app"
+ },
+ "aiestimator": {
+  "checked": "2026-09-15 18:01",
+  "repo": "aiestimator",
+  "state": "asleep",
+  "title": "AI Estimator for LLMs",
+  "url": "https://aiestimator.streamlit.app"
+ },
+ "airlines": {
+  "checked": "2026-09-15 18:01",
+  "repo": "airlines",
+  "state": "asleep",
+  "title": "AeroTrack AI",
+  "url": "https://airlines.streamlit.app"
+ },
+ "aitransform": {
+  "checked": "2026-09-15 18:03",
+  "repo": "techguard",
+  "state": "asleep",
+  "title": "TechGuardrails",
+  "url": "https://aitransform.streamlit.app"
+ },
+ "aitrust": {
+  "checked": "2026-09-15 18:03",
+  "repo": "trustlayer-ai",
+  "state": "asleep",
+  "title": "TrustLayer AI",
+  "url": "https://aitrust.streamlit.app"
+ },
+ "appdbperform": {
+  "checked": "2026-09-15 18:01",
+  "repo": "appdbperform",
+  "state": "asleep",
+  "title": "Secure Enterprise DB Analyzer",
+  "url": "https://appdbperform.streamlit.app"
+ },
+ "awscldidp": {
+  "checked": "2026-09-15 18:02",
+  "repo": "awswafazure",
+  "state": "asleep",
+  "title": "CloudIDP \u2014 Multi-Account Cloud Platform",
+  "url": "https://awscldidp.streamlit.app"
+ },
+ "awscompliance": {
+  "checked": "2026-09-15 18:01",
+  "repo": "awscompliance",
+  "state": "asleep",
+  "title": "AI-Enhanced AWS Compliance Platform",
+  "url": "https://awscompliance.streamlit.app"
+ },
+ "awscost": {
+  "checked": "2026-09-15 18:02",
+  "repo": "awscost",
+  "state": "asleep",
+  "title": "Enterprise AWS Cost Management",
+  "url": "https://awscost.streamlit.app"
+ },
+ "awsctserv": {
+  "checked": "2026-09-15 18:02",
+  "repo": "awsctserv",
+  "state": "asleep",
+  "title": "AWS Enterprise Assessment Platform",
+  "url": "https://awsctserv.streamlit.app"
+ },
+ "awsguardrails": {
+  "checked": "2026-09-15 18:02",
+  "repo": "awsguardrails",
+  "state": "asleep",
+  "title": "AWS Guardrails Platform",
+  "url": "https://awsguardrails.streamlit.app"
+ },
+ "awswafazure": {
+  "checked": "2026-09-15 18:02",
+  "repo": "awswafazure",
+  "state": "asleep",
+  "title": "CloudIDP \u2014 Multi-Account Cloud Platform",
+  "url": "https://awswafazure.streamlit.app"
+ },
+ "awswafscan": {
+  "checked": "2026-09-15 18:02",
+  "repo": "awswaf",
+  "state": "asleep",
+  "title": "AWS Well-Architected Advisor",
+  "url": "https://awswafscan.streamlit.app"
+ },
+ "awswar": {
+  "checked": "2026-09-15 18:02",
+  "repo": "awswaf",
+  "state": "asleep",
+  "title": "AWS Well-Architected Advisor",
+  "url": "https://awswar.streamlit.app"
+ },
+ "awswkspc": {
+  "checked": "2026-09-15 18:02",
+  "repo": "awswkspc",
+  "state": "asleep",
+  "title": "Citrix to AWS EUC Migration Studio",
+  "url": "https://awswkspc.streamlit.app"
+ },
+ "azureaiops": {
+  "checked": "2026-09-15 18:02",
+  "repo": "azureaiops",
+  "state": "asleep",
+  "title": "Azure CloudOps AI Platform",
+  "url": "https://azureaiops.streamlit.app"
+ },
+ "azurevdi": {
+  "checked": "2026-09-15 18:02",
+  "repo": "azurevdi",
+  "state": "asleep",
+  "title": "VDI Migration Assessment Tool",
+  "url": "https://azurevdi.streamlit.app"
+ },
+ "bomoco": {
+  "checked": "2026-09-15 18:02",
+  "repo": "bomoco",
+  "state": "asleep",
+  "title": "BOMOCO Cloud Optimizer",
+  "url": "https://bomoco.streamlit.app"
+ },
+ "cldidp": {
+  "checked": "2026-09-15 18:02",
+  "repo": "awswafazure",
+  "state": "asleep",
+  "title": "CloudIDP \u2014 Multi-Account Cloud Platform",
+  "url": "https://cldidp.streamlit.app"
+ },
+ "cloudidp": {
+  "checked": "2026-09-15 18:02",
+  "repo": "awswafazure",
+  "state": "asleep",
+  "title": "CloudIDP \u2014 Multi-Account Cloud Platform",
+  "url": "https://cloudidp.streamlit.app"
+ },
+ "cloudidps": {
+  "checked": "2026-09-15 18:02",
+  "repo": "awswafazure",
+  "state": "asleep",
+  "title": "CloudIDP \u2014 Multi-Account Cloud Platform",
+  "url": "https://cloudidps.streamlit.app"
+ },
+ "compliancenfinops": {
+  "checked": "2026-09-15 18:02",
+  "repo": "compliancenfinops",
+  "state": "asleep",
+  "title": "Cloud Compliance Canvas",
+  "url": "https://compliancenfinops.streamlit.app"
+ },
+ "contractmgmt": {
+  "checked": "2026-09-15 18:02",
+  "repo": "contractmgmt",
+  "state": "asleep",
+  "title": "AI Contract Lifecycle Management",
+  "url": "https://contractmgmt.streamlit.app"
+ },
+ "dbmetrics": {
+  "checked": "2026-09-15 18:02",
+  "repo": "dbmetrics",
+  "state": "asleep",
+  "title": "Database Metrics Collector",
+  "url": "https://dbmetrics.streamlit.app"
+ },
+ "dbmigrate": {
+  "checked": "2026-09-15 18:02",
+  "repo": "dbmigrate",
+  "state": "asleep",
+  "title": "CloudMigrate",
+  "url": "https://dbmigrate.streamlit.app"
+ },
+ "dbmigration": {
+  "checked": "2026-09-15 18:02",
+  "repo": "dbmigration",
+  "state": "asleep",
+  "title": "Enterprise Database Migration Analyzer",
+  "url": "https://dbmigration.streamlit.app"
+ },
+ "dbmigrations": {
+  "checked": "2026-09-15 18:03",
+  "repo": "networkdx",
+  "state": "asleep",
+  "title": "AWS Migration Analyzer",
+  "url": "https://dbmigrations.streamlit.app"
+ },
+ "dxnetworkvpc": {
+  "checked": "2026-09-15 18:03",
+  "repo": "networkdx",
+  "state": "asleep",
+  "title": "AWS Migration Analyzer",
+  "url": "https://dxnetworkvpc.streamlit.app"
+ },
+ "ec2workload": {
+  "checked": "2026-09-15 18:02",
+  "repo": "ec2workload",
+  "state": "asleep",
+  "title": "vROps-Driven AWS Migration Sizing",
+  "url": "https://ec2workload.streamlit.app"
+ },
+ "echoaiprojects": {
+  "checked": "2026-09-15 18:03",
+  "repo": "projects",
+  "state": "running",
+  "title": "Application Portfolio (this catalogue)",
+  "url": "https://echoaiprojects.streamlit.app"
+ },
+ "eksdesign": {
+  "checked": "2026-09-15 18:02",
+  "repo": "eksdesign",
+  "state": "asleep",
+  "title": "EKS Operations Platform",
+  "url": "https://eksdesign.streamlit.app"
+ },
+ "legalncompliance": {
+  "checked": "2026-09-15 18:02",
+  "repo": "legalncompliance",
+  "state": "asleep",
+  "title": "Regulatory Compliance AI Platform",
+  "url": "https://legalncompliance.streamlit.app"
+ },
+ "migratecomp": {
+  "checked": "2026-09-15 18:02",
+  "repo": "migratecomp",
+  "state": "asleep",
+  "title": "Cloud Migration Tool Comparator",
+  "url": "https://migratecomp.streamlit.app"
+ },
+ "migratetools": {
+  "checked": "2026-09-15 18:02",
+  "repo": "migratetools",
+  "state": "asleep",
+  "title": "Oracle to MongoDB Migration Analyzer",
+  "url": "https://migratetools.streamlit.app"
+ },
+ "multicldfinops": {
+  "checked": "2026-09-15 18:02",
+  "repo": "multicldfinops",
+  "state": "asleep",
+  "title": "Multi-Cloud FinOps Command Center",
+  "url": "https://multicldfinops.streamlit.app"
+ },
+ "multicloud": {
+  "checked": "2026-09-15 18:02",
+  "repo": "awswafazure",
+  "state": "asleep",
+  "title": "CloudIDP \u2014 Multi-Account Cloud Platform",
+  "url": "https://multicloud.streamlit.app"
+ },
+ "multidbschemadoc": {
+  "checked": "2026-09-15 18:02",
+  "repo": "multidbschemadoc",
+  "state": "asleep",
+  "title": "Multi-DB Schema Documentation Tool",
+  "url": "https://multidbschemadoc.streamlit.app"
+ },
+ "multiquerydb": {
+  "checked": "2026-09-15 18:02",
+  "repo": "multiquerydb",
+  "state": "asleep",
+  "title": "GenAI Database Query Translator",
+  "url": "https://multiquerydb.streamlit.app"
+ },
+ "onpremtocloud": {
+  "checked": "2026-09-15 18:03",
+  "repo": "onpremtocloud",
+  "state": "asleep",
+  "title": "CISCLD Ascend",
+  "url": "https://onpremtocloud.streamlit.app"
+ },
+ "rdsvrops": {
+  "checked": "2026-09-15 18:03",
+  "repo": "rdsaws",
+  "state": "asleep",
+  "title": "AWS RDS Migration & Sizing Tool",
+  "url": "https://rdsvrops.streamlit.app"
+ },
+ "resourceplan": {
+  "checked": "2026-09-15 18:03",
+  "repo": "resourceplan",
+  "state": "asleep",
+  "title": "Cloud Operations Resource Planning",
+  "url": "https://resourceplan.streamlit.app"
+ },
+ "returnguardai": {
+  "checked": "2026-09-15 18:03",
+  "repo": "returnguardai",
+  "state": "asleep",
+  "title": "ReturnGuard AI",
+  "url": "https://returnguardai.streamlit.app"
+ },
+ "saphanamonitor": {
+  "checked": "2026-09-15 18:03",
+  "repo": "saphanamonitor",
+  "state": "asleep",
+  "title": "SAP HANA Monitoring Copilot",
+  "url": "https://saphanamonitor.streamlit.app"
+ },
+ "sqlaoplanner": {
+  "checked": "2026-09-15 18:03",
+  "repo": "sqlaoplanner",
+  "state": "asleep",
+  "title": "SQL Server Scaling Platform",
+  "url": "https://sqlaoplanner.streamlit.app"
+ },
+ "sqlqueryopti": {
+  "checked": "2026-09-15 18:03",
+  "repo": "sqlservermaintain",
+  "state": "asleep",
+  "title": "SQL Server AI Optimizer Suite",
+  "url": "https://sqlqueryopti.streamlit.app"
+ },
+ "sqlservermaintain": {
+  "checked": "2026-09-15 18:03",
+  "repo": "sqlservermaintain",
+  "state": "asleep",
+  "title": "SQL Server AI Optimizer Suite",
+  "url": "https://sqlservermaintain.streamlit.app"
+ },
+ "techguard": {
+  "checked": "2026-09-15 18:03",
+  "repo": "techguard",
+  "state": "asleep",
+  "title": "TechGuardrails",
+  "url": "https://techguard.streamlit.app"
+ },
+ "techguardrails": {
+  "checked": "2026-09-15 18:02",
+  "repo": "techguard",
+  "state": "asleep",
+  "title": "TechGuardrails",
+  "url": "https://techguardrails.streamlit.app"
+ },
+ "telecomchurn": {
+  "checked": "2026-09-15 18:03",
+  "repo": "telecomchurn",
+  "state": "asleep",
+  "title": "Telecom Churn Predictor",
+  "url": "https://telecomchurn.streamlit.app"
+ },
+ "telecomchurnpredictor": {
+  "checked": "2026-09-15 18:03",
+  "repo": "telecomchurn",
+  "state": "asleep",
+  "title": "Telecom Churn Predictor",
+  "url": "https://telecomchurnpredictor.streamlit.app"
+ },
+ "terraformtocdk": {
+  "checked": "2026-09-15 18:03",
+  "repo": "terraformtocdk",
+  "state": "asleep",
+  "title": "Terraform to CDK Converter",
+  "url": "https://terraformtocdk.streamlit.app"
+ },
+ "vulcontainers": {
+  "checked": "2026-09-15 18:02",
+  "repo": "containervul",
+  "state": "asleep",
+  "title": "Container Vulnerability Management",
+  "url": "https://vulcontainers.streamlit.app"
+ },
+ "vulnerabilitymgmt": {
+  "checked": "2026-09-15 18:03",
+  "repo": "windowsvul",
+  "state": "asleep",
+  "title": "Windows Vulnerability AI Agent",
+  "url": "https://vulnerabilitymgmt.streamlit.app"
+ },
+ "workloadmigrate": {
+  "checked": "2026-09-15 18:04",
+  "repo": "workloadmigrate",
+  "state": "asleep",
+  "title": "Cobalt Migration Platform",
+  "url": "https://workloadmigrate.streamlit.app"
+ }
+}
