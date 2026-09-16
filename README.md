@@ -48,6 +48,14 @@ python -m playwright install chromium
 claude mcp add echo-apps -s user -- python /absolute/path/to/mcp/server.py
 ```
 
+There is also a local control panel with the same actions, for when you'd rather click than ask Claude:
+
+```bash
+streamlit run mcp/ui.py --server.port 8533
+```
+
+It lists every discovered app with its state, and runs check, wake, screenshot and browse against the one you pick. Run it locally: those actions drive a real browser, which Streamlit Community Cloud cannot do.
+
 For apps behind a login, add `mcp/credentials.json` (gitignored) so screenshots and browsing can sign in:
 
 ```json
