@@ -1,4 +1,9 @@
-# Dependencies for the MCP server only — the Streamlit page uses the root requirements.txt.
-mcp>=1.27
+# Dependencies for the MCP server and its local UI — the Streamlit page uses the root requirements.txt.
+# pydantic 2.7 (shipped with some older installs) cannot build a tool schema for a plain-string
+# return and fails at import with "A non-annotated attribute was detected: result".
+mcp>=1.27.1
+pydantic>=2.9
 httpx>=0.28
 playwright>=1.49
+streamlit>=1.40
+pandas>=2.0
