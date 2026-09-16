@@ -36,7 +36,16 @@ WAKE_BUTTON = "Yes, get this app back up!"
 NO_ACCESS_TEXT = "do not have access to this app"
 UA = "Mozilla/5.0 (compatible; echo-apps-mcp/1.0)"
 
-HAS_PLAYWRIGHT = importlib.util.find_spec("playwright") is not None
+def _playwright_ready() -> bool:
+    """A half-removed install leaves an empty `playwright` folder that imports as a namespace
+    package, so check for the module we actually use, not just the top-level name."""
+    try:
+        return importlib.util.find_spec("playwright.async_api") is not None
+    except (ImportError, AttributeError, ValueError):
+        return False
+
+
+HAS_PLAYWRIGHT = _playwright_ready()
 NO_BROWSER = {"error": "Playwright is not installed in this Python, so browser actions are unavailable.",
               "fix": "pip install playwright && python -m playwright install chromium"}
 
